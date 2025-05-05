@@ -182,4 +182,4 @@
 	recruitment_message = "Join the Forest Garrison, %RECRUIT!"
 	accept_message = "I swear to protect the forest!"
 	refuse_message = "I refuse."
-
+*/
