@@ -366,7 +366,7 @@
 	wearer.remove_status_effect(/datum/status_effect/buff/goldstrengh)
 
 // ---------------------- RARE RING (SPD) ----------------------------
-obj/item/clothing/ring/gold/goldspeed
+/obj/item/clothing/ring/gold/goldspeed
 	name = "ring of speed"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly speed."
 	icon_state = "rare_ring_spd"
@@ -388,7 +388,7 @@ obj/item/clothing/ring/gold/goldspeed
 	wearer.remove_status_effect(/datum/status_effect/buff/goldspeed)
 
 // ---------------------- RARE RING (END) ----------------------------
-obj/item/clothing/ring/gold/goldend
+/obj/item/clothing/ring/gold/goldend
 	name = "ring of endurance"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly endurance."
 	icon_state = "rare_ring_end"
@@ -410,7 +410,7 @@ obj/item/clothing/ring/gold/goldend
 	wearer.remove_status_effect(/datum/status_effect/buff/goldend)
 
 // ---------------------- RARE RING (CONSTITUTION) ----------------------------
-obj/item/clothing/ring/gold/goldconst
+/obj/item/clothing/ring/gold/goldconst
 	name = "ring of constitution"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly constitution."
 	icon_state = "rare_ring_const"
@@ -432,7 +432,7 @@ obj/item/clothing/ring/gold/goldconst
 	wearer.remove_status_effect(/datum/status_effect/buff/goldconst)
 
 // ---------------------- RARE RING (LUCK) ----------------------------
-obj/item/clothing/ring/gold/goldluck
+/obj/item/clothing/ring/gold/goldluck
 	name = "ring of fortune"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly fortune."
 	icon_state = "rare_ring_luck"
@@ -454,7 +454,7 @@ obj/item/clothing/ring/gold/goldluck
 	wearer.remove_status_effect(/datum/status_effect/buff/goldluck)
 
 // ---------------------- RARE RING (PERCEPTION) ----------------------------
-obj/item/clothing/ring/gold/goldper
+/obj/item/clothing/ring/gold/goldper
 	name = "ring of perception"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly vision."
 	icon_state = "rare_ring_per"
@@ -477,7 +477,7 @@ obj/item/clothing/ring/gold/goldper
 	wearer.remove_status_effect(/datum/status_effect/buff/goldper)
 
 // ---------------------- RARE RING (INT) ----------------------------
-obj/item/clothing/ring/gold/goldint
+/obj/item/clothing/ring/gold/goldint
 	name = "ring of intelligence"
 	desc = "An old golden ring, inscribed with arcane words. Just being near it imbues you with otherworldly mental clarity."
 	icon_state = "rare_ring_int"
