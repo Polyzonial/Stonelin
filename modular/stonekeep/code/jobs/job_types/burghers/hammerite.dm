@@ -21,8 +21,8 @@
 	spawn_positions = 2
 	bypass_lastclass = TRUE
 	min_pq = -50
-	allowed_patrons = list(/datum/patron/divine/malum)//town guild is formed by malumites only
-	cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+	allowed_patrons = list(/datum/patron/divine/malum) //town guild is formed by malumites only
+	cmode_music = 'modular/stonekeep/sound/cmode/combat_dwarf.ogg'
 
 /datum/outfit/job/stonekeep/hammerite/pre_equip(mob/living/carbon/human/H)
 	..()
