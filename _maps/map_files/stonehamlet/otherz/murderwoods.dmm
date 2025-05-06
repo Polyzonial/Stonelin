@@ -176,7 +176,7 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/woods/stone)
 "fT" = (
-/obj/structure/door/wood/weak/bolt,
+/obj/structure/door/weak/bolt,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors)
 "fY" = (
@@ -274,7 +274,7 @@
 /turf/open/floor/dirt,
 /area/rogue/indoors)
 "is" = (
-/obj/structure/door/wood/weak/bolt{
+/obj/structure/door/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/dirt,
@@ -468,7 +468,7 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/woods/stone)
 "oO" = (
-/obj/structure/door/wood/weak/bolt,
+/obj/structure/door/weak/bolt,
 /turf/open/floor/dirt,
 /area/rogue/indoors/bandit_lair)
 "oR" = (
@@ -618,7 +618,7 @@
 	},
 /area/rogue/outdoors/river)
 "ua" = (
-/obj/structure/door/wood/weak/bolt{
+/obj/structure/door/weak/bolt{
 	dir = 4
 	},
 /turf/open/floor/ruinedwood,
@@ -1060,11 +1060,11 @@
 /turf/open/floor/dirt/muddie,
 /area/rogue/outdoors/woods/stone)
 "FK" = (
-/obj/structure/door/wood/weak/bolt{
+/obj/structure/door/weak/bolt{
 	dir = 1;
-	locked = 1;
 	name = "hill fort"
 	},
+/obj/effect/mapping_helpers/door/locker,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/woods/stone)
 "FL" = (

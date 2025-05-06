@@ -1920,7 +1920,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/cavelava)
 "Kb" = (
-/obj/structure/door/wood/donjon/stone{
+/obj/structure/door/stone{
 	lockid = "mansionvampire";
 	name = "lords room"
 	},
@@ -2109,7 +2109,7 @@
 /turf/open/floor/cobble,
 /area/rogue/under/lavamonastery)
 "Nm" = (
-/obj/structure/door/wood/donjon/stone,
+/obj/structure/door/stone,
 /turf/open/floor/churchbrick,
 /area/rogue/under/mountains/anvil/lower)
 "Nn" = (
@@ -2152,10 +2152,10 @@
 /turf/open/floor/naturalstone,
 /area/rogue/indoors/cave/bear)
 "Ps" = (
-/obj/structure/door/wood/donjon/stone{
-	locked = 1;
+/obj/structure/door/stone{
 	lockid = "mansionvampire"
 	},
+/obj/effect/mapping_helpers/door/locker,
 /turf/open/floor/hexstone,
 /area/rogue/indoors/vampire_manor)
 "Pv" = (
@@ -2712,7 +2712,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/cavelava)
 "YI" = (
-/obj/structure/door/wood/green{
+/obj/structure/door/green{
 	lockid = "zizombiemonastery";
 	name = "monastery"
 	},
