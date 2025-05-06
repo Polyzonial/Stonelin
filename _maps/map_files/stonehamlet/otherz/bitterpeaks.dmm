@@ -1192,7 +1192,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/mountains)
 "vz" = (
-/obj/structure/mineral_door{
+/obj/structure/door{
 	lockid = "zizotower";
 	name = "tower of the wise"
 	},
@@ -1920,7 +1920,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/cavelava)
 "Kb" = (
-/obj/structure/mineral_door/wood/donjon/stone{
+/obj/structure/door/wood/donjon/stone{
 	lockid = "mansionvampire";
 	name = "lords room"
 	},
@@ -2109,7 +2109,7 @@
 /turf/open/floor/cobble,
 /area/rogue/under/lavamonastery)
 "Nm" = (
-/obj/structure/mineral_door/wood/donjon/stone,
+/obj/structure/door/wood/donjon/stone,
 /turf/open/floor/churchbrick,
 /area/rogue/under/mountains/anvil/lower)
 "Nn" = (
@@ -2152,7 +2152,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/indoors/cave/bear)
 "Ps" = (
-/obj/structure/mineral_door/wood/donjon/stone{
+/obj/structure/door/wood/donjon/stone{
 	locked = 1;
 	lockid = "mansionvampire"
 	},
@@ -2712,7 +2712,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/cavelava)
 "YI" = (
-/obj/structure/mineral_door/wood/green{
+/obj/structure/door/wood/green{
 	lockid = "zizombiemonastery";
 	name = "monastery"
 	},

@@ -297,7 +297,7 @@
 /turf/open/floor/dirt/muddie,
 /area/rogue/outdoors/bog/wetlands)
 "eD" = (
-/obj/structure/mineral_door/swing_door,
+/obj/structure/door/swing_door,
 /turf/open/floor/dirt,
 /area/rogue/indoors)
 "eK" = (
@@ -326,7 +326,7 @@
 /turf/open/floor/wood,
 /area/rogue/indoors)
 "fp" = (
-/obj/structure/mineral_door/bars{
+/obj/structure/door/bars{
 	lockid = "tollhouse";
 	name = "cage door"
 	},
@@ -365,7 +365,7 @@
 /turf/open/floor/cobble,
 /area/rogue/indoors)
 "fY" = (
-/obj/structure/mineral_door/wood/donjon{
+/obj/structure/door/wood/donjon{
 	locked = 1;
 	lockid = "tollhouse";
 	name = "old tollhouse"
@@ -485,7 +485,7 @@
 /turf/closed/mineral/bedrock,
 /area/rogue/under/cave/sumpgrotto)
 "hQ" = (
-/obj/structure/mineral_door/wood/donjon{
+/obj/structure/door/wood/donjon{
 	dir = 4;
 	locked = 1;
 	lockid = "tollhouse";
@@ -614,7 +614,7 @@
 /turf/open/floor/cobblemoss,
 /area/rogue/under/xylix)
 "jy" = (
-/obj/structure/mineral_door/wood/donjon{
+/obj/structure/door/wood/donjon{
 	dir = 8;
 	locked = 1;
 	lockid = "tollhouse";
@@ -711,7 +711,7 @@
 /turf/open/floor/blocks,
 /area/rogue/indoors)
 "lc" = (
-/obj/structure/mineral_door/wood/donjon{
+/obj/structure/door/wood/donjon{
 	locked = 1;
 	lockid = "tollhouse";
 	name = "old tollhouse"
@@ -1925,7 +1925,7 @@
 /turf/open/floor/grass/red,
 /area/rogue/outdoors/bog)
 "Nb" = (
-/obj/structure/mineral_door/wood/deadbolt{
+/obj/structure/door/wood/deadbolt{
 	dir = 4
 	},
 /turf/open/floor/ruinedwood,

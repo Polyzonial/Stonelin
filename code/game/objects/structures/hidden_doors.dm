@@ -68,7 +68,7 @@ GLOBAL_LIST_EMPTY(thieves_guild_doors)
 /obj/structure/door/secret/door_rattle()
 	return
 
-/obj/structure/mineral_door/secret/attack_hand(mob/user)
+/obj/structure/door/secret/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return
