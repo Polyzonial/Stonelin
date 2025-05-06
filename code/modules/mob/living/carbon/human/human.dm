@@ -1,4 +1,3 @@
-#ifdef MATURESERVER
 /mob/living/carbon/human/MiddleClick(mob/user, params)
 	..()
 	if(!user)
@@ -55,7 +54,6 @@
 						U = new/obj/item/undies/f(get_turf(src))
 					U.color = underwear_color
 					user.put_in_hands(U)	//STONEKEEP EDIT END
-#endif
 
 /mob/living/carbon/human/Initialize()
 #ifdef MATURESERVER	//STONEKEEP EDIT START
