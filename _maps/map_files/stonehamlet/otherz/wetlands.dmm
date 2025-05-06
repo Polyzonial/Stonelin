@@ -1925,7 +1925,7 @@
 /turf/open/floor/grass/red,
 /area/rogue/outdoors/bog)
 "Nb" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4
 	},
 /turf/open/floor/ruinedwood,

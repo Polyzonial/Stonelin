@@ -21,7 +21,7 @@
 /turf/closed/wall/mineral/decowood,
 /area/rogue/indoors/town/tavern/saiga)
 "abl" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	locked = 1
 	},
 /obj/structure/barricade/rogue/crude{
@@ -179,7 +179,7 @@
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/vault)
 "amv" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8;
 	name = "maidens quarters"
 	},
@@ -793,7 +793,7 @@
 /turf/open/floor/wood,
 /area/rogue/indoors/town/hamlet)
 "bkI" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4;
 	name = "privy"
 	},
@@ -3243,7 +3243,7 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "eug" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1;
 	name = "maidens quarters"
 	},
@@ -4020,7 +4020,7 @@
 /turf/closed/wall/mineral/stone/moss/blue,
 /area/rogue/indoors/town/magician)
 "fun" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /obj/structure/barricade/rogue/crude{
 	layer = 4.2
 	},
@@ -4809,7 +4809,7 @@
 /turf/open/floor/cobble/mossy,
 /area/rogue/outdoors/exposed/manorgarri)
 "gxG" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4;
 	name = "maidens quarters"
 	},
@@ -6062,7 +6062,7 @@
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/hamlet)
 "iek" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	locked = 1
 	},
 /turf/open/floor/dirt/road,
@@ -6384,7 +6384,7 @@
 /turf/open/floor/concrete,
 /area/rogue/indoors/town/magician)
 "iDK" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8;
 	name = "privy"
 	},
@@ -9002,7 +9002,7 @@
 /turf/open/floor/dirt/road,
 /area/rogue/under/town/basement)
 "maX" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/ruinedwood/spiral,
@@ -9495,7 +9495,7 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/exposed/townhamlet)
 "mDV" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1;
 	name = "privy"
 	},
@@ -12636,7 +12636,7 @@
 /turf/open/floor/twig,
 /area/rogue/indoors/town/shop)
 "qBy" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -13814,7 +13814,7 @@
 /turf/closed/wall/mineral/wooddark/vertical,
 /area/rogue/indoors/town/clinic_large)
 "rZX" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4;
 	lockid = null;
 	name = "balcony"
@@ -17348,7 +17348,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
 "wJJ" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/dirt/road,
@@ -17684,7 +17684,7 @@
 /area/rogue/indoors/town/church/chapel)
 "xdT" = (
 /obj/structure/table/wood/reinforced_alt,
-/obj/structure/door/wood/deadbolt/shutter{
+/obj/structure/door/wood/weak/bolt/shutter{
 	dir = 4
 	},
 /turf/open/floor/ruinedwood,

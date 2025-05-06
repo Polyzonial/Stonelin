@@ -863,7 +863,7 @@
 /turf/open/floor/dirt,
 /area/rogue/outdoors/town)
 "aWb" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/dirt,
@@ -1756,7 +1756,7 @@
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/dwarfin)
 "bWi" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -2469,7 +2469,7 @@
 	},
 /area/rogue/indoors/town)
 "cJo" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/ruinedwood/turned/darker,
@@ -3872,7 +3872,7 @@
 /turf/open/floor/cobble,
 /area/rogue/outdoors/town)
 "emx" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -3921,7 +3921,7 @@
 	},
 /area/rogue/indoors/town)
 "eoP" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town)
 "eoU" = (
@@ -4296,7 +4296,7 @@
 /turf/open/floor/cobble,
 /area/rogue/indoors)
 "eIl" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/ruinedwood{
@@ -5165,7 +5165,7 @@
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/manor)
 "fFr" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8;
 	name = "Tool Storage"
 	},
@@ -5685,7 +5685,7 @@
 /turf/open/floor/cobble,
 /area/rogue/under/town/basement)
 "gop" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/tile{
 	icon_state = "greenstone"
 	},
@@ -5852,7 +5852,7 @@
 /turf/open/floor/twig,
 /area/rogue/outdoors/town/roofs)
 "gvq" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4
 	},
 /turf/open/floor/cobble,
@@ -6511,7 +6511,7 @@
 	},
 /area/rogue/indoors)
 "hgl" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4
 	},
 /turf/open/floor/wood/nosmooth,
@@ -7178,7 +7178,7 @@
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/dwarfin)
 "hRM" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/cobblerock,
 /area/rogue/indoors/town)
 "hSh" = (
@@ -7283,7 +7283,7 @@
 /turf/open/floor/tile,
 /area/rogue/indoors/town/vault)
 "hVa" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/cobblerock,
@@ -8489,7 +8489,7 @@
 /turf/open/floor/cobblerock,
 /area/rogue/outdoors/town)
 "jvr" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/blocks/green,
 /area/rogue/under/town/sewer)
 "jvw" = (
@@ -8544,7 +8544,7 @@
 /turf/open/floor/cobble,
 /area/rogue/under/town/basement)
 "jAq" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/twig,
 /area/rogue/indoors/town)
 "jAr" = (
@@ -8771,7 +8771,7 @@
 /turf/open/floor/concrete,
 /area/rogue/indoors/town/shop)
 "jLT" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/dwarfin)
 "jLZ" = (
@@ -10323,7 +10323,7 @@
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor)
 "luF" = (
-/obj/structure/door/wood/deadbolt,
+/obj/structure/door/wood/weak/bolt,
 /turf/open/floor/ruinedwood{
 	dir = 1;
 	icon_state = "vertw"
@@ -10944,7 +10944,7 @@
 /turf/open/floor/blocks,
 /area/rogue/under/town/basement)
 "mgA" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4;
 	name = "Bunkroom"
 	},
@@ -14238,7 +14238,7 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/town)
 "pzs" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 4
 	},
 /turf/open/floor/blocks,
@@ -14522,7 +14522,7 @@
 	},
 /area/rogue/indoors/town/tavern)
 "pRP" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/blocks,
@@ -15378,7 +15378,7 @@
 	},
 /area/rogue/indoors/town/manor)
 "qRp" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/woodturned,
@@ -15983,7 +15983,7 @@
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town)
 "rEg" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/blocks/green,
@@ -16050,7 +16050,7 @@
 /turf/open/floor/tile,
 /area/rogue/under/town/basement)
 "rIf" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8;
 	name = "Sewage Access"
 	},
@@ -17631,7 +17631,7 @@
 /turf/open/floor/tile,
 /area/rogue/indoors/town/manor)
 "tBd" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1;
 	name = "Sewers"
 	},
@@ -18797,7 +18797,7 @@
 /turf/open/floor/tile,
 /area/rogue/indoors/town/manor)
 "uID" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 1
 	},
 /turf/open/floor/cobble,
@@ -20511,7 +20511,7 @@
 	},
 /area/rogue/under/town/basement)
 "wAn" = (
-/obj/structure/door/wood/deadbolt{
+/obj/structure/door/wood/weak/bolt{
 	dir = 8
 	},
 /turf/open/floor/ruinedwood{
@@ -21922,7 +21922,7 @@
 	dir = 1;
 	icon_state = "tablewood_alt2"
 	},
-/obj/structure/door/wood/deadbolt/shutter,
+/obj/structure/door/wood/weak/bolt/shutter,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/tavern)
 "yfB" = (
