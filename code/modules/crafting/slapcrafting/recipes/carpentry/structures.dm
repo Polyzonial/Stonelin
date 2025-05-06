@@ -24,7 +24,7 @@
 		)
 	result_type = /obj/structure/door/swing
 
-/datum/slapcraft_recipe/carpentry/structure/deadbolt
+/datum/slapcraft_recipe/carpentry/structure/weak/bolt
 	name = "wooden door (deadbolt)"
 	steps = list(
 		/datum/slapcraft_step/item/small_log,

@@ -373,7 +373,7 @@
 	layer = BELOW_OPEN_DOOR_LAYER
 
 
-/obj/structure/mineral_door/swing_door/horizontal
+/obj/structure/door/swing_door/horizontal
 	icon = 'modular/stonekeep/icons/structure.dmi'
 
 
