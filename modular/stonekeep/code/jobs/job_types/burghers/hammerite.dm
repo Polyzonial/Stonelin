@@ -21,11 +21,14 @@
 	spawn_positions = 2
 	bypass_lastclass = TRUE
 	min_pq = -50
-	allowed_patrons = list(/datum/patron/divine/malum) //town guild is formed by malumites only
+//	allowed_patrons = list(/datum/patron/divine/malum) commented out, function moved to pre_equip
 	cmode_music = 'modular/stonekeep/sound/cmode/combat_dwarf.ogg'
 
 /datum/outfit/job/stonekeep/hammerite/pre_equip(mob/living/carbon/human/H)
 	..()
+	if(H.patron != /datum/patron/divine/malum)
+		H.set_patron(/datum/patron/divine/malum)
+
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, rand(1,3), TRUE)
@@ -45,8 +48,6 @@
 
 		H.grant_language(/datum/language/dwarvish)
 
-/datum/outfit/job/stonekeep/hammerite/pre_equip(mob/living/carbon/human/H)
-	..()
 	ring = /obj/item/key/guildring
 	pants = /obj/item/clothing/pants/tights/makers
 	armor = /obj/item/clothing/armor/leather/vest/black

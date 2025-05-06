@@ -27,7 +27,7 @@
 	specstats = list("strength" = -1, "perception" = -1, "intelligence" = 1, "constitution" = 0, "endurance" = 1, "speed" = 2, "fortune" = 0)
 	specstats_f = list("strength" = 0, "perception" = -1, "intelligence" = 1, "constitution" = 1, "endurance" = 0, "speed" = 1, "fortune" = 0)
 
-#define DELF_SCORPION "B8CEAD"
+#define DELF_SCORPION "5f665b"
 
 /datum/species/elf/dark/get_skin_list()
 	return sortList(list(

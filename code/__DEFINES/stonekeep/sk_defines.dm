@@ -137,7 +137,7 @@ GLOBAL_LIST_EMPTY(zizo_starts)
 #define MASON_ORDER			36
 #define NITEMAN_ORDER		38
 
-#define ELDER_ORDER			41
+#define ELDER_ORDER			40
 #define SOILSON_ORDER		43
 #define COOK_ORDER			44
 #define WEAVER_ORDER		45
