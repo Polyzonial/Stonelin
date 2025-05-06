@@ -19,6 +19,9 @@
 	outfit = /datum/outfit/job/artificer
 	give_bank_account = 8
 
+/datum/outfit/job/artificer
+	job_bitflag = BITFLAG_CONSTRUCTOR
+
 /datum/outfit/job/artificer/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
@@ -58,4 +61,4 @@
 
 	if(H.dna.species.id == "dwarf")
 		head = /obj/item/clothing/head/helmet/leather/minershelm
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'modular/stonekeep/sound/cmode/combat_dwarf.ogg'

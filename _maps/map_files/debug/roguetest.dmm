@@ -903,10 +903,6 @@
 /obj/item/weapon/shield/tower,
 /turf/open/floor/cobble,
 /area/rogue/indoors)
-"cm" = (
-/obj/structure/mineral_door,
-/turf/open/floor/blocks,
-/area/rogue/indoors)
 "cn" = (
 /obj/structure/hotspring/border/ten,
 /turf/open/floor/grass/yel,
@@ -1081,6 +1077,14 @@
 	},
 /turf/open/floor/grass/yel,
 /area/rogue/outdoors)
+"dx" = (
+/obj/structure/door,
+/turf/open/floor/blocks,
+/area/rogue/indoors)
+"dF" = (
+/obj/structure/door,
+/turf/open/floor/wood,
+/area/rogue/indoors)
 "ef" = (
 /obj/structure/hotspring/border/five,
 /obj/structure/flora/hotspring_rocks{
@@ -1211,6 +1215,11 @@
 	dir = 8
 	},
 /area/rogue/outdoors/mountains/decap)
+"ia" = (
+/obj/structure/flora/grass,
+/obj/effect/fog_parter,
+/turf/open/floor/grass/yel,
+/area/rogue/outdoors)
 "iE" = (
 /obj/machinery/light/fueled/torchholder/hotspring/standing{
 	pixel_x = 15
@@ -1302,6 +1311,13 @@
 "mo" = (
 /obj/structure/flora/grass,
 /obj/structure/water_pipe,
+/turf/open/floor/grass/yel,
+/area/rogue/outdoors)
+"mq" = (
+/obj/structure/flora/grass,
+/obj/structure/minecart_rail{
+	dir = 4
+	},
 /turf/open/floor/grass/yel,
 /area/rogue/outdoors)
 "mx" = (
@@ -1509,6 +1525,13 @@
 /obj/structure/hotspring,
 /obj/effect/falling_sakura,
 /turf/open/floor/dirt/road,
+/area/rogue/outdoors)
+"tz" = (
+/obj/structure/flora/grass/herb/symphitum,
+/obj/structure/minecart_rail{
+	dir = 4
+	},
+/turf/open/floor/grass/yel,
 /area/rogue/outdoors)
 "tH" = (
 /turf/closed,
@@ -1787,10 +1810,6 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/cobblerock,
 /area/rogue/outdoors)
-"CZ" = (
-/obj/structure/mineral_door,
-/turf/open/floor/wood,
-/area/rogue/indoors)
 "Di" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -1915,6 +1934,12 @@
 	},
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors)
+"In" = (
+/obj/structure/minecart_rail{
+	dir = 4
+	},
+/turf/open/floor/dirt,
+/area/rogue/outdoors)
 "IW" = (
 /obj/structure/hotspring/border/nine,
 /obj/effect/falling_sakura,
@@ -1968,6 +1993,12 @@
 	dir = 1
 	},
 /turf/open/floor/dirt/road,
+/area/rogue/outdoors)
+"Lc" = (
+/obj/structure/minecart_rail{
+	dir = 4
+	},
+/turf/open/floor/grass/yel,
 /area/rogue/outdoors)
 "Ln" = (
 /obj/structure/chair/hotspring_bench/left{
@@ -2254,6 +2285,14 @@
 /obj/structure/fermentation_keg/distiller,
 /turf/open/floor/carpet,
 /area/rogue/indoors)
+"Xg" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/minecart_rail{
+	dir = 4
+	},
+/obj/structure/closet/crate/miningcar,
+/turf/open/floor/grass/yel,
+/area/rogue/outdoors)
 "XC" = (
 /obj/structure/flora/grass,
 /mob/living/simple_animal/hostile/retaliate/cow,
@@ -11771,7 +11810,7 @@ RF
 ky
 qc
 FN
-qc
+mq
 qc
 qc
 Wr
@@ -12028,7 +12067,7 @@ RC
 eq
 jC
 QN
-jC
+Xg
 QN
 qc
 QN
@@ -12285,7 +12324,7 @@ SZ
 RF
 Qi
 QN
-ai
+In
 al
 Wr
 ai
@@ -16138,7 +16177,7 @@ yB
 bq
 ad
 bq
-cm
+dx
 Wr
 Wr
 cU
@@ -17176,7 +17215,7 @@ QN
 QN
 QN
 QN
-CZ
+dF
 mY
 OZ
 Zs
@@ -75253,7 +75292,7 @@ QN
 ky
 QN
 jC
-qc
+ia
 ky
 qc
 QN
@@ -76536,7 +76575,7 @@ zc
 Mn
 QN
 QN
-QN
+Lc
 QN
 QN
 eE
@@ -76793,7 +76832,7 @@ Zs
 aj
 QN
 jC
-QN
+Lc
 ky
 jC
 ss
@@ -77050,7 +77089,7 @@ aj
 Kh
 QN
 QN
-sd
+tz
 QN
 QN
 ss
@@ -82197,12 +82236,12 @@ ss
 ss
 ss
 ss
-ss
-ss
-ss
-ss
-Sz
-ss
+Tz
+DW
+DW
+DW
+Mr
+DW
 ss
 ss
 ss
@@ -82454,12 +82493,12 @@ ss
 ss
 ss
 ss
-ss
-Tz
+ck
 DW
 DW
-Mr
-ss
+DW
+DW
+DW
 ss
 ss
 ss
@@ -82708,15 +82747,15 @@ ss
 ss
 ss
 ss
-ss
-ss
-ss
-ss
-ck
+Az
 DW
 DW
 DW
-ss
+DW
+DW
+DW
+DW
+DW
 ss
 ss
 ss
@@ -82965,15 +83004,15 @@ ss
 ss
 ss
 ss
-ss
-Az
 DW
 DW
 DW
 DW
 DW
 DW
-ss
+DW
+DW
+DW
 ss
 ss
 at
@@ -83222,7 +83261,6 @@ ss
 ss
 ss
 ss
-ss
 DW
 DW
 DW
@@ -83230,7 +83268,8 @@ DW
 DW
 DW
 DW
-ss
+DW
+DW
 at
 at
 at
@@ -83479,7 +83518,7 @@ ss
 ss
 ss
 ss
-ss
+DW
 DW
 DW
 DW
@@ -83736,7 +83775,7 @@ at
 ss
 ss
 ss
-ss
+DW
 DW
 DW
 DW

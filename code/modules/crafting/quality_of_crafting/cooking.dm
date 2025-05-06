@@ -18,7 +18,7 @@
 	)
 	output = /obj/item/soap
 	starting_atom = /obj/item/pestle
-	attacked_atom = /obj/item/mortar
+	attacked_atom = /obj/item/reagent_containers/glass/mortar
 	tool_use_time = 4 SECONDS
 	craft_time = 6 SECONDS
 
@@ -31,6 +31,6 @@
 	requirements = list(
 		/obj/item/ash = 1,
 		/obj/item/reagent_containers/food/snacks/fat = 1,
-		/obj/item/alch/mentha
+		/obj/item/alch/mentha = 1,
 	)
 	output = /obj/item/soap/bath

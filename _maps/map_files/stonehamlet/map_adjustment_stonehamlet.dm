@@ -11,7 +11,7 @@
 
 /datum/job/scribe,
 /datum/job/artificer,
-/datum/job/physicker,
+/datum/job/courtphys,
 /datum/job/armorsmith,
 /datum/job/weaponsmith,
 /datum/job/tailor,
@@ -33,7 +33,7 @@
 
 /datum/job/butcher,
 /datum/job/carpenter,
-/datum/job/mayor,
+/datum/job/town_elder,
 /datum/job/fisher,
 /datum/job/cheesemaker,
 /datum/job/archivist,

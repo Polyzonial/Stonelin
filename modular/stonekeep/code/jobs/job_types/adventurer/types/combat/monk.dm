@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/sk/adventurer/monk
 	min_pq = -10
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/adventurer/CombatMonk.ogg'
 	vampcompat = FALSE
 
 /datum/outfit/job/sk/adventurer/monk
@@ -25,7 +25,7 @@
 	belt = /obj/item/storage/belt/leather/rope
 	beltr = /obj/item/storage/belt/pouch/coins/poor
 	backl = /obj/item/storage/backpack/backpack
-	backr = /obj/item/weapon/polearm/woodstaff
+	backr = /obj/item/weapon/polearm/woodstaff/quarterstaff/iron
 
 	if(H.mind)
 		if(H.patron != /datum/patron/divine/ravox)
@@ -34,7 +34,8 @@
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, pick(1,1,2), TRUE) // Wood staff
+		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, pick(2,3), TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, pick(2,3), TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)

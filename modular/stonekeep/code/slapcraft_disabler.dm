@@ -15,7 +15,7 @@
 	steps = null
 /datum/slapcraft_recipe/carpentry/structure/swingdoor
 	steps = null
-/datum/slapcraft_recipe/carpentry/structure/deadbolt
+/datum/slapcraft_recipe/carpentry/structure/weak/bolt
 	steps = null
 /datum/slapcraft_recipe/carpentry/structure/donjon
 	steps = null

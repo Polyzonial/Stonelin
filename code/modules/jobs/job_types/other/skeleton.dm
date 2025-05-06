@@ -17,7 +17,7 @@
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_PLAYER_ALL
-	cmode_music = 'sound/music/cmode/antag/combatskeleton.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/antag/combatskeleton.ogg'
 
 	outfit = /datum/outfit/job/skeleton
 	give_bank_account = FALSE
@@ -43,17 +43,11 @@
 		qdel(O)
 	H.regenerate_limb(BODY_ZONE_R_ARM)
 	H.regenerate_limb(BODY_ZONE_L_ARM)
-	for(var/obj/item/bodypart/B in H.bodyparts)
-		B.skeletonize()
+	H.skeletonize()
 	H.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, /datum/intent/simple/claw)
 	H.update_a_intents()
 
-	var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
-	if(eyes)
-		eyes.Remove(H, TRUE)
-		QDEL_NULL(eyes)
-	eyes = new /obj/item/organ/eyes/night_vision/zombie
-	eyes.Insert(H)
+	H.grant_undead_eyes()
 	H.ambushable = FALSE
 	H.underwear = "Nude"
 	if(H.charflaw)
@@ -167,7 +161,7 @@
 /datum/job/skeleton/zizoid
 	title = "Cult Summon"
 	outfit = /datum/outfit/job/skeleton/zizoid
-	cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+	cmode_music = 'modular/Stonekeep/sound/cmode/antag/combat_cult.ogg'
 
 /datum/job/skeleton/zizoid/after_spawn(mob/living/spawned, client/player_client)
 	..()

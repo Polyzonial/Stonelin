@@ -23,7 +23,7 @@
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
 	give_bank_account = 30
-	cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/garrison/CombatForestGarrison.ogg'
 
 	outfit = /datum/outfit/job/forestguard
 	advclass_cat_rolls = list(CTAG_FORGARRISON = 20)
@@ -71,7 +71,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
@@ -110,7 +110,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
@@ -147,7 +147,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)

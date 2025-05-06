@@ -9,11 +9,15 @@
 	faction = FACTION_STATION
 	total_positions = 12
 	spawn_positions = 12
+	bypass_lastclass = TRUE
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_PLAYER_ALL
 
 	outfit = /datum/outfit/job/miner
+
+/datum/outfit/job/miner
+	job_bitflag = BITFLAG_CONSTRUCTOR
 
 /datum/outfit/job/miner/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -49,6 +53,6 @@
 
 	if(H.dna.species.id == "dwarf")
 		head = /obj/item/clothing/head/helmet/leather/minershelm
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'modular/stonekeep/sound/cmode/combat_dwarf.ogg'
 	else
 		beltr = /obj/item/flashlight/flare/torch/lantern

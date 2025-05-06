@@ -107,7 +107,7 @@ GLOBAL_LIST_EMPTY(zizo_starts)
 #define SK_PILGRIM		(1<<2)
 #define SK_BANDIT		(1<<3)
 
-#define OUTSIDERS           (1<<7)
+#define SK_OUTSIDERS    (1<<7)
 
 #define LORD_ORDER			1
 #define CONSORT_ORDER		2
@@ -152,3 +152,12 @@ GLOBAL_LIST_EMPTY(zizo_starts)
 
 
 #define GATOR_HEALTH 220
+
+
+//Kaizoku Unique Roles
+
+#define SK_MASTERSOHEI		(1<<0)
+#define SK_SOHEI			(1<<1)
+
+#define MASTERSOHEI_ORDER	25
+#define SOHEI_ORDER			29

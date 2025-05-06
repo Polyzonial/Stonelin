@@ -135,7 +135,7 @@
 
 /turf/open/floor/rooftop
 	name = "roof"
-	icon_state = "roof-arw"
+	icon_state = MAP_SWITCH("roof", "roof-arw")
 	footstep = FOOTSTEP_WOOD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
@@ -144,20 +144,13 @@
 	damage_deflection = 8
 	max_integrity = 800
 
-/turf/open/floor/rooftop/Initialize()
-	. = ..()
-	icon_state = "roof"
-
 /turf/open/floor/rooftop/turf_destruction(damage_flag)
 	. = ..()
 	ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 
 /turf/open/floor/rooftop/green
-	icon_state = "roofg-arw"
+	icon_state = MAP_SWITCH("roofg", "roofg-arw")
 
-/turf/open/floor/rooftop/green/Initialize()
-	. = ..()
-	icon_state = "roofg"
 /*	..................   Grasses   ................... */
 /turf/open/floor/grass
 	name = "grass"
@@ -178,8 +171,8 @@
 						/turf/open/floor/snow/rough)
 	max_integrity = 1200
 
-	spread_chance = 15
-	burn_power = 6
+	spread_chance = 3
+	burn_power = 60
 
 /turf/open/floor/grass/Initialize()
 	dir = pick(GLOB.cardinals)
@@ -328,7 +321,7 @@
 	canSmoothWith = list(/turf/open/floor/grass,
 						/turf/open/floor/snow)
 
-	spread_chance = 8
+	spread_chance = 1.6
 
 	neighborlay = "dirtedge"
 	var/muddy = FALSE
@@ -728,6 +721,7 @@
 	max_integrity = 800
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
 	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	shine = SHINE_SHINY
 
 /turf/open/floor/churchmarble/cardinal_smooth(adjacencies)
 	smooth(adjacencies)

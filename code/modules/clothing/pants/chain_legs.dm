@@ -5,7 +5,6 @@
 	gender = PLURAL
 	icon_state = "chain_legs"
 	item_state = "chain_legs"
-//	adjustable = CAN_CADJUST
 	sewrepair = FALSE
 	resistance_flags = FIRE_PROOF
 	blocksound = CHAINHIT
@@ -37,3 +36,21 @@
 	armor = ARMOR_MAILLE_IRON
 	max_integrity = INTEGRITY_STRONG
 	item_weight = 6 * IRON_MULTIPLIER
+
+/obj/item/clothing/pants/chainlegs/kilt
+	name = "steel chain kilt"
+	desc = "Interlinked metal rings that drape down all the way to the ankles."
+	icon = 'icons/roguetown/clothing/special/pants_metal.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/pants_metal.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/pants_metal.dmi'
+	icon_state = "chainkilt"
+	item_state = "chainkilt"
+
+/obj/item/clothing/pants/chainlegs/kilt/iron
+	name = "iron chain kilt"
+	desc = "Interlinked metal rings that drape down all the way to the ankles."
+	icon_state = "ichainkilt"
+	item_state = "ichainkilt"
+	smeltresult = /obj/item/ingot/iron
+	armor = ARMOR_MAILLE_IRON
+	max_integrity = INTEGRITY_STRONG

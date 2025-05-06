@@ -538,7 +538,7 @@
 	name = "ararebo"
 	icon = 'modular/stonekeep/kaizoku/icons/weapons/32.dmi'
 	icon_state = "ararebo"
-	desc = "A large, iron-capped club used by Abyssariads as a armor-breaking tool. Most suitable to breach Grezenholftean cuirass while still holding a shield in the off-hand."
+	desc = "A large, iron-capped club used by Abyssariads as a armor-breaking tool. Most suitable to breach Grenzeholftean cuirass while still holding a shield in the off-hand."
 
 /obj/item/weapon/mace/ararebo/dustcurse/dropped()
 	. = ..()
@@ -674,7 +674,7 @@
 // =================================================================
 // ========================		KNIFE	============================
 
-/obj/item/weapon/huntingknife/kunai //Practically a villager knife with more utility. It helps others to climb walls.
+/obj/item/weapon/knife/dagger/kunai //Practically a villager knife with more utility. It helps others to climb walls.
 	name = "kunai"
 	desc = "A simple stabbing weapon made of iron which originated as a masonry or gardening tool, useful for climbing walls in similar ways to pitons."
 	icon = 'modular/stonekeep/kaizoku/icons/weapons/32.dmi'
@@ -752,7 +752,6 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
 	blade_dulling = DULLING_BASHCHOP
-	walking_stick = TRUE
 	pixel_y = -16
 	pixel_x = -16
 	inhand_x_dimension = 64
@@ -763,7 +762,6 @@
 	bigboy = TRUE
 	gripsprite = TRUE
 	associated_skill = /datum/skill/combat/polearms
-	walking_stick = TRUE
 	embedding = list(
 		"embed_chance" = 75,
 		"embedded_pain_multiplier" = 10,
@@ -884,7 +882,6 @@
 	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
 	dropshrink = 0.8
 	blade_dulling = DULLING_BASHCHOP
-	walking_stick = TRUE
 	wlength = WLENGTH_LONG
 	sharpness = IS_BLUNT
 	minstr = 8
@@ -1356,7 +1353,7 @@
 			desc = "The traditional wakizashi used by abyssariads for centuries, with a lack of a pommel and a broader handguard for hand protection. The sorii of the blade improves the cutting power."
 		if(3)
 			name = "shirasaya wakizashi"
-			desc = "The cheaper adaptation of the Wakizashi with an complete lack of handguard and no tsuka ito covering the "
+			desc = "The cheaper adaptation of the Wakizashi with an complete lack of handguard and no tsuka ito."
 	icon_state = "wakizashi[design]"
 
 /datum/intent/sword/cut/sorii //It is the reverse of the Shortsword.
@@ -1382,7 +1379,7 @@
 
 /obj/item/weapon/sword/dragonslayer //It's a sword, yes. It will be used as a sword? My dudes we moving that one like warhammers at this point. So it's blunt at this point.
 	name = "dragonslayer eclipse sword"
-	desc = "Dragonslayers uses swords too big to be called a sword. Massive, thick, heavy and far too rough. Indeed, they use a heap of raw iron. These are not crafted for fnesse, but for raw carnage in steel to obliterate Dragon's almost impenetrable skin."
+	desc = "Dragonslayers uses swords too big to be called a sword. Massive, thick, heavy and far too rough. Indeed, they use a heap of raw iron. These are not crafted for finesse, but for raw carnage in steel to obliterate Dragon's almost impenetrable skin."
 	gripped_intents = list(/datum/intent/dragonslayer/smash, /datum/intent/polearm/chop) //This is practically a mace... that can chop off heads since it's sharp.
 	icon_state = "eclipse_sword"
 	resistance_flags = FIRE_PROOF
@@ -1837,7 +1834,7 @@
 		to_chat(user, "<span class='warning'>You carefully decock the crossbow.</span>")
 		cocked = FALSE
 	else
-		if(user.get_num_arms(FALSE) < 2)
+		if(user.usable_hands < 2)
 			return FALSE
 		if(user.get_inactive_held_item())
 			to_chat(user, "<span class='warning'>You require two hands to stirrup the weapon.</span>")
@@ -1849,7 +1846,7 @@
 	update_icon()
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/chukonu/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
-	if(user.get_num_arms(FALSE) < 2)
+	if(user.usable_hands < 2)
 		return FALSE
 	if(user.get_inactive_held_item())
 		to_chat(user, "<span class='warning'>You require a free hand to pull the lever.</span>")
@@ -1945,7 +1942,7 @@
 
 	return mutable_appearance('modular/stonekeep/kaizoku/icons/weapons/bows.dmi', overlay_icon)
 
-obj/item/gun/ballistic/revolver/grenadelauncher/chukonu/examine(mob/user)
+/obj/item/gun/ballistic/revolver/grenadelauncher/chukonu/examine(mob/user)
 	. = ..()
 	var/remaining_ammo = 0
 	if(magazine)

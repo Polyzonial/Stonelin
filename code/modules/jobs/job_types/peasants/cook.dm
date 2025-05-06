@@ -26,7 +26,10 @@
 	outfit = /datum/outfit/job/cook
 	display_order = JDO_COOK
 	give_bank_account = 8
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/towner/CombatInn.ogg'
+
+/datum/outfit/job/cook
+	job_bitflag = BITFLAG_CONSTRUCTOR
 
 /datum/outfit/job/cook/pre_equip(mob/living/carbon/human/H)
 	..()

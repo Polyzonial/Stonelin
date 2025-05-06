@@ -203,25 +203,17 @@
 	src.base_fortune = 6
 
 
-	cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/antag/combat_cult.ogg'
 
 	set_patron(master.patron)
 	copy_known_languages_from(master,FALSE)
 	mob_biotypes = MOB_UNDEAD
 	faction = list(FACTION_UNDEAD)
 	ambushable = FALSE
-	underwear = "Nude"
 
-	for(var/obj/item/bodypart/BP in bodyparts)
-		BP.skeletonize()
-
-	var/obj/item/organ/eyes/eyes = getorganslot(ORGAN_SLOT_EYES)
-	if(eyes)
-		eyes.Remove(src,1)
-		QDEL_NULL(eyes)
-
-	eyes = new /obj/item/organ/eyes/night_vision/zombie
-	eyes.Insert(src)
+	skeletonize(FALSE)
+	skele_look()
+	grant_undead_eyes()
 
 	if(charflaw)
 		QDEL_NULL(charflaw)
@@ -289,6 +281,8 @@
 	var/mob/living/carbon/human/lich_player = user
 
 	to_chat(lich_player, span_boldannounce("Lich [lich_player.real_name] commands: [message]"))
+	message_admins("[lich_player.real_name], the Lich, commands his minions: [message]")
+	lich_player.log_message("[lich_player.real_name], the Lich, commands his minions: [message]", LOG_GAME)
 
 	for(var/mob/player in lich_player.minions)
 		if(player.mind)

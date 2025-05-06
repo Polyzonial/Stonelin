@@ -1,7 +1,7 @@
 /datum/antagonist/zombie
 	name = "Zombie"	// Deadite plague of Zizo
 	antagpanel_category = "Zombie"
-	antag_hud_type = ANTAG_HUD_TRAITOR
+	antag_hud_type = ANTAG_HUD_HIDDEN
 	antag_hud_name = "zombie"
 	show_name_in_check_antagonists = TRUE
 	show_in_roundend = FALSE
@@ -25,6 +25,7 @@
 	var/stored_experience
 	/// Whether or not we have been turned
 	var/has_turned = FALSE
+	// we don't use innate_traits here because zombies aren't meant to get their traits on_gain.
 	/// Traits applied to the owner mob when we turn into a zombie
 	var/static/list/traits_zombie = list(
 		TRAIT_NOSTAMINA,
@@ -93,13 +94,14 @@
 	stored_experience = owner.skill_experience.Copy()
 	owner.known_skills = list()
 	owner.skill_experience = list()
-	zombie.cmode_music ='sound/music/cmode/combat_weird.ogg'
+	zombie.cmode_music ='modular/stonekeep/sound/cmode/combat_weird.ogg'
 	zombie.vitae_pool = 0 // Deadites have no vitae to drain from
 	var/datum/language_holder/mob_language = zombie.get_language_holder()
 	prev_language = mob_language.copy()
 	zombie.remove_all_languages()
 	zombie.grant_language(/datum/language/hellspeak)
 
+	zombie.ai_controller = new /datum/ai_controller/zombie(zombie)
 	return ..()
 
 /datum/antagonist/zombie/on_removal()
@@ -185,10 +187,9 @@
 	zombie.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, /datum/intent/unarmed/claw)
 	zombie.update_a_intents()
 	if(!zombie.client)
-		zombie.ai_controller = new /datum/ai_controller/human_npc(zombie)
+		zombie.ai_controller = new /datum/ai_controller/zombie(zombie)
 
-	var/obj/item/organ/eyes/eyes = new /obj/item/organ/eyes/night_vision/zombie
-	eyes.Insert(zombie, drop_if_replaced = FALSE)
+	zombie.grant_undead_eyes()
 	ambushable = zombie.ambushable
 	zombie.ambushable = FALSE
 
@@ -204,7 +205,7 @@
 			zombie_part.rotted = TRUE
 		zombie_part.update_disabled()
 	zombie.update_body()
-	zombie.cmode_music = 'sound/music/cmode/combat_weird.ogg'
+	zombie.cmode_music = 'modular/stonekeep/sound/cmode/combat_weird.ogg'
 	zombie.set_patron(/datum/patron/inhumen/zizo)
 
 	for(var/datum/status_effect/effect in zombie.status_effects) //necessary to prevent exploits
@@ -254,6 +255,7 @@
 		qdel(src)
 		return
 
+	GLOB.vanderlin_round_stats[STATS_DEADITES_WOKEN_UP]++
 	zombie.blood_volume = BLOOD_VOLUME_MAXIMUM
 	zombie.setOxyLoss(0, updating_health = FALSE, forced = TRUE) //zombles dont breathe
 	zombie.setToxLoss(0, updating_health = FALSE, forced = TRUE) //zombles are immune to poison
@@ -263,7 +265,7 @@
 		zombie.heal_wounds(INFINITY) //Heal every wound that is not permanent
 	zombie.set_stat(UNCONSCIOUS) //Start unconscious
 	zombie.updatehealth() //then we check if the mob should wake up
-	zombie.update_mobility()
+	// zombie.update_mobility()
 	zombie.update_sight()
 	zombie.reload_fullscreen()
 	transform_zombie()

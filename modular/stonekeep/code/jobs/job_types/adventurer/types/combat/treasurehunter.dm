@@ -8,7 +8,7 @@
 	outfit = /datum/outfit/job/sk/adventurer/treasurehunter
 	min_pq = 0
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/church/CombatGravekeeper.ogg'
 
 /datum/outfit/job/sk/adventurer/treasurehunter/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -30,9 +30,9 @@
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)

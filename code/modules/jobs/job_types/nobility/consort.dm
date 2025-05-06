@@ -24,8 +24,8 @@
 	advclass_cat_rolls = list(CTAG_CONSORT = 20)
 	give_bank_account = 500
 	apprentice_name = "Servant"
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
-
+	cmode_music = 'modular/stonekeep/sound/cmode/nobility/combat_noble.ogg'
+	noble_income = 22
 
 /datum/job/consort/after_spawn(mob/living/spawned, client/player_client)
 	..()
@@ -138,7 +138,7 @@
 
 /datum/advclass/consort/lowborn
 	name = "Lowborn Consort"
-	tutorial = "You never could have dreamed your life would be like this. Though your origins are humble, something special about you - whether it was your good looks, your kind heart, or your bravery - has brought you into Vanderlin Keep."
+	tutorial = "You never could have dreamed your life would be like this. Though your origins are humble, something special about you - whether it was your good looks, your kind heart, or your bravery - has brought you into Rockhill."
 	outfit = /datum/outfit/job/consort/lowborn
 
 	category_tags = list(CTAG_CONSORT)

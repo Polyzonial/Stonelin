@@ -382,12 +382,10 @@
 		if(istype(attacking_item, /obj/item/needle))
 			var/obj/item/needle/sewer = attacking_item
 			var/obj/item/storage/this_item = parent
-			if(sewer.can_repair && this_item.sewrepair && this_item.max_integrity && !this_item.obj_broken && this_item.obj_integrity < this_item.max_integrity && user.mind.get_skill_level(/datum/skill/misc/sewing) >= 1 && this_item.ontable() && !being_repaired)
-				being_repaired = TRUE
+			if(sewer.can_repair && this_item.sewrepair && this_item.max_integrity && !this_item.obj_broken && this_item.obj_integrity < this_item.max_integrity && this_item.ontable())
 				return FALSE
 		if(user.used_intent.type == /datum/intent/snip) //This makes it so we can salvage
 			return FALSE
-	being_repaired = FALSE
 
 	. = TRUE //no afterattack
 	if(!can_be_inserted(attacking_item, FALSE, user, params = params, storage_click = storage_click))
@@ -943,7 +941,7 @@
 		return
 	usr.client.screen -= hovering
 	var/datum/component/storage/storage_master = master
-	if(!istype(storage_master) || !(usr in storage_master.is_using) || !isliving(usr) || usr.incapacitated())
+	if(!istype(storage_master) || !(usr in storage_master.is_using) || !isliving(usr) || usr.incapacitated(ignore_grab = TRUE))
 		return
 	var/obj/item/held_item = usr.get_active_held_item()
 	if(!held_item)
@@ -985,7 +983,7 @@
 		return
 	usr.client.screen -= hovering
 	var/datum/component/storage/storage_master = master
-	if(!istype(storage_master) || !(usr in storage_master.is_using) || !isliving(usr) || usr.incapacitated())
+	if(!istype(storage_master) || !(usr in storage_master.is_using) || !isliving(usr) || usr.incapacitated(ignore_grab = TRUE))
 		return
 	var/obj/item/held_item = usr.get_active_held_item()
 	if(!held_item)

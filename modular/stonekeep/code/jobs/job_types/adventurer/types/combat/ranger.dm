@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/job/sk/adventurer/ranger
 	min_pq = -10
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'modular/stonekeep/sound/cmode/adventurer/CombatWarrior.ogg'
 
 /datum/outfit/job/sk/adventurer/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -36,7 +36,7 @@
 	H.mind?.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 
-	shirt = /obj/item/clothing/shirt/undershirt/random
+	shirt = pick(/obj/item/clothing/shirt/undershirt/random, /obj/item/clothing/armor/gambeson/light)
 	pants = pick(/obj/item/clothing/pants/tights/random, /obj/item/clothing/pants/trou/leather )
 	gloves = pick(/obj/item/clothing/gloves/leather, /obj/item/clothing/gloves/fingerless)
 	wrists = /obj/item/clothing/wrists/bracers/leather
@@ -60,7 +60,7 @@
 		beltr = /obj/item/weapon/sword/scimitar/falchion
 		beltl = /obj/item/ammo_holder/quiver/bolts
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC) // Dwarf rangers are no good at dodging, but can wear heavier armor than typical rangers
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'modular/Stonekeep/sound/cmode/combat_dwarf.ogg'
 	else
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)

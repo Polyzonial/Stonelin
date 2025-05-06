@@ -8,7 +8,7 @@
 	)
 	outfit = /datum/outfit/job/stonekeep/merc/underdweller
 	category_tags = list(CTAG_SKMERCENARY)
-	maximum_possible_slots = 5
+	maximum_possible_slots = 6
 
 /datum/outfit/job/stonekeep/merc/underdweller/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -31,7 +31,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -40,7 +40,7 @@
 		H.change_stat("strength", 1)
 
 	if(H.dna.species.id == "dwarf")
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'modular/stonekeep/sound/cmode/combat_dwarf.ogg'
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 		head = /obj/item/clothing/head/helmet/leather/minershelm
@@ -51,6 +51,6 @@
 
 		beltl = /obj/item/weapon/sword/sabre // Dark elves get a sabre as their primary weapon and swords skill, who woulda thought
 
-	H.merctype = 3
+	H.merctype = 6
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
