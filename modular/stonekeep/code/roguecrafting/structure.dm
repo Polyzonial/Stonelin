@@ -224,7 +224,7 @@
 
 /datum/crafting_recipe/roguetown/structure/carpentry/door
 	name = "door (wood)"
-	result = /obj/structure/door/wood/weak/bolt
+	result = /obj/structure/door/weak/bolt
 	reqs = list(/obj/item/grown/log/tree/small=2)
 	craftdiff = 2
 
