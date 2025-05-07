@@ -1,4 +1,4 @@
-/datum/job/stonekeep/feldsher
+/datum/job/feldsher
 	title = "Feldsher"
 	flag = SK_FELDSHER
 	department_flag = SERFS
