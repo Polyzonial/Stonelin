@@ -74,8 +74,6 @@
 
 	category_tags = list(CTAG_SKHAND)
 
-	cmode_music = 'modular/stonekeep/sound/cmode/nobility/combat_spymaster.ogg'
-
 /datum/outfit/job/stonekeep/hand_spymaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	beltr = /obj/item/weapon/sword/sabre/dec
@@ -96,8 +94,6 @@
 	outfit = /datum/outfit/job/stonekeep/hand_consort
 
 	category_tags = list(CTAG_SKHAND)
-
-	cmode_music = 'modular/stonekeep/sound/cmode/nobility/combat_consort.ogg'
 
 /datum/outfit/job/stonekeep/hand_consort/pre_equip(mob/living/carbon/human/H)
 	..()
