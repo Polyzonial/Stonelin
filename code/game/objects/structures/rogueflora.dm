@@ -50,32 +50,6 @@
 /obj/structure/flora/tree/Initialize()
 	. = ..()
 
-/*
-	if(makevines)
-		var/turf/target = get_step_multiz(src, UP)
-		if(istype(target, /turf/open/transparent/openspace))
-			target.ChangeTurf(/turf/open/floor/shroud)
-			var/makecanopy = FALSE
-			for(var/D in GLOB.cardinals)
-				if(!makecanopy)
-					var/turf/NT = get_step(src, D)
-					for(var/obj/structure/flora/tree/R in NT)
-						if(R.makevines)
-							makecanopy = TRUE
-							break
-			if(makecanopy)
-				for(var/D in GLOB.cardinals)
-					var/turf/NT = get_step(target, D)
-					if(NT)
-						if(istype(NT, /turf/open/transparent/openspace) || istype(NT, /turf/open/floor/shroud))
-							NT.ChangeTurf(/turf/closed/wall/shroud)
-							for(var/X in GLOB.cardinals)
-								var/turf/NA = get_step(NT, X)
-								if(NA)
-									if(istype(NA, /turf/open/transparent/openspace))
-										NA.ChangeTurf(/turf/open/floor/shroud)
-*/
-
 	if(istype(loc, /turf/open/floor/grass))
 		var/turf/T = loc
 		T.ChangeTurf(/turf/open/floor/dirt)
@@ -463,6 +437,15 @@
 	. = ..()
 	icon_state = "tallbush[pick(1,2)]_tundra"
 
+/obj/structure/flora/grass/bush/wall/tall/bog
+	desc = "A tall bush that has grown into a hedge... but this one seems diseased."
+	name = "bog great bush"
+	icon_state = "tallbush1_bog"
+
+/obj/structure/flora/grass/bush/wall/tall/bog/Initialize()
+	. = ..()
+	icon_state = "tallbush[pick(1,2)]_bog"
+
 // fyrituis bush
 /obj/structure/flora/grass/pyroclasticflowers
 	name = "odd group of flowers"
@@ -806,6 +789,13 @@
 
 /obj/structure/flora/grass/bush_meagre/tundra/update_icon()
 	icon_state = "bush[rand(1,3)]_tundra"
+
+/obj/structure/flora/grass/bush_meagre/yellow
+	name = "bog bush"
+	icon_state = "bush1_bog"
+
+/obj/structure/flora/grass/bush_meagre/yellow/update_icon()
+	icon_state = "bush[rand(1,3)]_bog"
 
 /obj/structure/flora/grass/bush_meagre/Initialize()
 	if(silky)
