@@ -15,7 +15,6 @@ GLOBAL_PROTECT(noble_positions)
 
 GLOBAL_LIST_INIT(garrison_positions, list(
 	/datum/job/captain::title,	// STONEKEEP EDIT moved from noble positions
-	/datum/job/royalguard::title,
 	/datum/job/royalknight::title,
 	/datum/job/veteran::title,
 	/datum/job/guardsman::title,

@@ -27,7 +27,7 @@
 		/datum/job/bapprentice,
 		/datum/job/servant,
 
-		/datum/job/royalguard,
+		/datum/job/royalknight,
 		/datum/job/veteran,
 		/datum/job/guardsman,
 		/datum/job/forestwarden,

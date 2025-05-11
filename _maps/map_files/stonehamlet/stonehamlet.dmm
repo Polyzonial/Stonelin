@@ -23,9 +23,7 @@
 "abl" = (
 /obj/structure/door/weak/bolt,
 /obj/effect/mapping_helpers/door/locker,
-/obj/structure/barricade/rogue/crude{
-	layer = 4.2
-	},
+/obj/structure/barricade/wooden,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/rtfield/plague_district)
 "acy" = (
@@ -3416,7 +3414,7 @@
 /turf/open/floor/naturalstone,
 /area/rogue/under/cave)
 "eAK" = (
-/obj/structure/barricade/rogue{
+/obj/structure/barricade{
 	layer = 2
 	},
 /turf/open/floor/blocks/moss,
@@ -3541,6 +3539,10 @@
 	},
 /turf/open/floor/blocks,
 /area/rogue/outdoors)
+"eLe" = (
+/obj/structure/well/fountain/mana,
+/turf/open/floor/blocks/moss,
+/area/rogue/outdoors/exposed/townhamlet)
 "eLF" = (
 /turf/open/floor/church,
 /area/rogue/indoors/town/church/chapel)
@@ -4020,9 +4022,7 @@
 /area/rogue/indoors/town/magician)
 "fun" = (
 /obj/structure/door/weak/bolt,
-/obj/structure/barricade/rogue/crude{
-	layer = 4.2
-	},
+/obj/structure/barricade/wooden,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/rtfield/plague_district)
 "fuO" = (
@@ -5760,6 +5760,7 @@
 /area/rogue/indoors/town/garrison)
 "hLW" = (
 /obj/structure/door/swing_door/horizontal{
+	icon_state = "swing";
 	name = "stables";
 	pixel_x = -10
 	},
@@ -7609,9 +7610,7 @@
 	},
 /area/rogue/indoors/town/church)
 "kkx" = (
-/turf/closed/wall/mineral/pipe{
-	icon_state = "iron_corner"
-	},
+/turf/closed/wall/mineral/pipe,
 /area/rogue/indoors/town/shop)
 "kkL" = (
 /obj/structure/stairs{
@@ -7825,7 +7824,7 @@
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/church/chapel)
 "kzh" = (
-/obj/structure/barricade/rogue,
+/obj/structure/barricade/wooden,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/rtfield/hamlet)
 "kzq" = (
@@ -12616,7 +12615,9 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/mountains)
 "qAE" = (
-/obj/structure/door/swing_door/horizontal,
+/obj/structure/door/swing_door/horizontal{
+	icon_state = "swing"
+	},
 /turf/open/floor/twig,
 /area/rogue/indoors/town/shop)
 "qAN" = (
@@ -15787,12 +15788,6 @@
 /obj/structure/stairs/d,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/outdoors)
-"uGi" = (
-/turf/closed/wall/mineral/pipe{
-	dir = 8;
-	icon_state = "iron_corner"
-	},
-/area/rogue/indoors/town)
 "uGG" = (
 /obj/structure/door/swing_door/horizontal,
 /obj/machinery/light/fueled/wallfire/candle/open,
@@ -15931,9 +15926,7 @@
 /turf/open/floor/ruinedwood/turned,
 /area/rogue/indoors/shelter/rtfield)
 "uRd" = (
-/obj/structure/barricade/rogue/crude{
-	layer = 4.2
-	},
+/obj/structure/barricade/wooden,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/rtfield/plague_district)
 "uRB" = (
@@ -17804,7 +17797,7 @@
 /turf/open/floor/cobble,
 /area/rogue/under/town/basement)
 "xmQ" = (
-/obj/structure/barricade/rogue,
+/obj/structure/barricade,
 /turf/closed/wall/mineral/wood,
 /area/rogue/indoors/shelter/mountains)
 "xnb" = (
@@ -17980,9 +17973,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors)
 "xDP" = (
-/turf/closed/wall/mineral/pipe{
-	icon_state = "iron_corner"
-	},
+/turf/closed/wall/mineral/pipe,
 /area/rogue/indoors/town)
 "xEn" = (
 /turf/closed/wall/mineral/roofwall/outercorner{
@@ -86060,9 +86051,9 @@ ahK
 ahK
 uzL
 uzL
-ahK
-ahK
-ahK
+nBJ
+nBJ
+nBJ
 ahK
 ahK
 ahK
@@ -86262,9 +86253,9 @@ tUg
 uzL
 uzL
 uzL
-uzL
-ahK
-ahK
+nBJ
+eLe
+nBJ
 ahK
 ahK
 ahK
@@ -86464,9 +86455,9 @@ uzL
 uzL
 uzL
 uzL
-uzL
-uzL
-ahK
+nBJ
+nBJ
+nBJ
 ahK
 ahK
 ahK
@@ -115937,11 +115928,11 @@ bMF
 aEO
 sNs
 rfm
-uGi
-rzq
-rzq
-rzq
-rzq
+xDP
+xDP
+xDP
+xDP
+xDP
 xDP
 sNs
 sNs
@@ -116750,8 +116741,8 @@ vNu
 vNu
 vNu
 vNu
-ceQ
-qWE
+kkx
+kkx
 kkx
 jtB
 sNs
@@ -116954,7 +116945,7 @@ kHD
 kHD
 gHM
 qyk
-iMx
+kkx
 jtB
 sNs
 sNs
@@ -117156,7 +117147,7 @@ kHD
 kHD
 tFa
 qyk
-iMx
+kkx
 jtB
 sNs
 sNs
@@ -117357,8 +117348,8 @@ qAE
 kOo
 too
 hxN
-vic
-jAW
+kkx
+kkx
 jtB
 sNs
 sNs
@@ -117559,7 +117550,7 @@ iAp
 iAp
 dQC
 cWr
-iMx
+kkx
 jtB
 jtB
 sNs
@@ -117761,7 +117752,7 @@ iAp
 iAp
 ayA
 cWr
-iMx
+kkx
 jtB
 jtB
 sNs
@@ -117961,9 +117952,9 @@ sjt
 oQm
 iAp
 iAp
-vic
-qWE
-jAW
+kkx
+kkx
+kkx
 jtB
 rGO
 sNs
@@ -118163,7 +118154,7 @@ sjt
 dXB
 lFQ
 hsy
-iMx
+kkx
 sNs
 sNs
 sNs
@@ -118365,7 +118356,7 @@ fBL
 chD
 lEQ
 lEQ
-jAW
+kkx
 sNs
 sNs
 sNs
