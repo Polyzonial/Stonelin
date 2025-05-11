@@ -243,9 +243,10 @@
 					to_chat(user, "<span class='greentext'>Your internal glands releases venom upon [src]</span>")
 					to_chat(src, "<span class='warning'>Argh! An burning sensation has spread on my veins!</span>")
 					src.reagents.add_reagent(/datum/reagent/poison/changelingtoxin, 5) // Inject 5 units of venomtoxin
-			if(user.mind && mind)
-				if(istype(user.dna.species, /datum/species/werewolf))
-					caused_wound?.werewolf_infect_attempt()
+			if(user?.mind && mind)
+				if(user.dna?.species && istype(user.dna.species, /datum/species/werewolf))
+					if(caused_wound)
+						caused_wound.werewolf_infect_attempt()
 					if(prob(30))
 						user.werewolf_feed(src)
 				if(user.mind.has_antag_datum(/datum/antagonist/zombie) && !src.mind.has_antag_datum(/datum/antagonist/zombie))
@@ -633,7 +634,7 @@
 			return
 	if(!used_intent.noaa && ismob(A))
 //		playsound(src, pick(GLOB.unarmed_swingmiss), 100, FALSE)
-		do_attack_animation(A, visual_effect_icon = used_intent.animname)
+		do_attack_animation(A, visual_effect_icon = used_intent.animname, used_intent = used_intent)
 		changeNext_move(used_intent.clickcd)
 //		src.emote("attackgrunt")
 		playsound(get_turf(src), used_intent.miss_sound, 100, FALSE)

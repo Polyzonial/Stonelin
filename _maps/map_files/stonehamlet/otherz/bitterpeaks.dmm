@@ -374,7 +374,7 @@
 /turf/open/floor/grass/cold,
 /area/rogue/outdoors/mountains/decap)
 "gK" = (
-/obj/structure/barricade/rogue,
+/obj/structure/barricade/wooden,
 /turf/open/floor/naturalstone,
 /area/rogue/under/cavelava)
 "gL" = (
@@ -59598,8 +59598,8 @@ XX
 XX
 ZF
 ZF
-ZF
-ZF
+XB
+XB
 XX
 XX
 XX
@@ -59726,11 +59726,11 @@ ZF
 ZF
 XX
 XX
-XX
-XX
-ZF
-ZF
-ZF
+XB
+XB
+XB
+XB
+XB
 XX
 XX
 XX
@@ -59856,11 +59856,11 @@ ZF
 ZF
 XX
 XX
-XX
-XX
-XX
-XX
-XX
+XB
+XB
+XB
+XB
+XB
 XX
 XX
 XX
@@ -59987,9 +59987,9 @@ XX
 RN
 XX
 ZF
-ZF
-XX
-XX
+XB
+XB
+XB
 XX
 XX
 XX

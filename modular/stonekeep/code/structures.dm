@@ -156,7 +156,6 @@
 	icon = 'modular/stonekeep/icons/tables.dmi'
 	icon_state = "stonetable_mid"
 	max_integrity = 300
-	smooth = 0
 	climb_offset = 10
 /obj/structure/table/stone/OnCrafted(dirin, user)
 	if(dirin == NORTH)
@@ -175,7 +174,6 @@
 	icon = 'modular/stonekeep/icons/tables.dmi'
 	icon_state = "stonetable_end"
 	max_integrity = 300
-	smooth = 0
 	climb_offset = 10
 /obj/structure/table/stone_end/OnCrafted(dirin, user)
 	if(dirin == NORTH)
@@ -194,7 +192,6 @@
 	icon = 'modular/stonekeep/icons/tables.dmi'
 	icon_state = "longtable"
 	max_integrity = 100
-	smooth = 0
 	climb_offset = 8
 
 /obj/structure/table/stone_small/gravekeeper
@@ -375,7 +372,7 @@
 
 /obj/structure/door/swing_door/horizontal
 	icon = 'modular/stonekeep/icons/structure.dmi'
-
+	icon_state = "swing"
 
 /obj/structure/fluff/railing/fence/palisade_alt
 	icon_state = "fence_alt"

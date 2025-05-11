@@ -9,6 +9,8 @@
 /*-----------\
 | Structures |
 \-----------*/
+/datum/slapcraft_recipe/carpentry/structure/donjon
+	steps = null
 /datum/slapcraft_recipe/carpentry/structure/barrel
 	steps = null
 /datum/slapcraft_recipe/carpentry/structure/door
