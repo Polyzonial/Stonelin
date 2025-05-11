@@ -22,6 +22,8 @@
 /// Patreon only races.
 #define RACES_PLAYER_PATREON			list("Kobold", "Hollow-Kin")
 
+/// Guard Races - No Orcs
+#define RACES_PLAYER_GUARD						list("Humen", "Rakshari", "Half-Elf", "Elf", "Dwarf", "Tiefling", "Aasimar", "Harpies", "Dark Elf")
 
 
 #define ALL_TEMPLE_PATRONS 		list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/necra, /datum/patron/divine/ravox, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora)
@@ -171,6 +173,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define CTAG_CONSORT 		"CAT_CONSORT" 		// Consort classes
 #define CTAG_VETERAN		"CAT_VETERAN"		// Veteran class - Handles Veteran class selector
 #define CTAG_TOWN_ELDER		"CAT_TOWN_ELDER"		// Town Elder class - Handles Town Elder class selector
+#define CTAG_ROYALKNIGHT	"CAT_ROYAL_KNIGHT"
 #define CTAG_MENATARMS		"CAT_MENATARMS"
 #define CTAG_SERVANT		"CAT_SERVANT" 		// Servant class - 4 type of servant to fill in someplace.
 #define CTAG_GATEMASTER		"CAT_GATEMASTER"
