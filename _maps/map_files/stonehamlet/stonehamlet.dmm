@@ -434,6 +434,12 @@
 "aEA" = (
 /turf/closed/wall/mineral/stone,
 /area/rogue/indoors/town/hamlet)
+"aEK" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/rogue/outdoors/exposed/townhamlet)
 "aEO" = (
 /turf/closed/wall/mineral/decowood,
 /area/rogue/indoors/town/hamlet)
@@ -629,6 +635,10 @@
 	},
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/hamlet)
+"aVk" = (
+/mob/living/carbon/human/species/zizombie/npc/peasant,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/rtfield/plague_district)
 "aVu" = (
 /obj/structure/closet/dirthole/closed,
 /obj/structure/flora/grass,
@@ -819,6 +829,11 @@
 	},
 /turf/open/floor/ruinedwood/spiralfade,
 /area/rogue/indoors/town/manor/stone)
+"boq" = (
+/obj/structure/bed/sleepingbag,
+/obj/item/bedsheet/wool,
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "boC" = (
 /obj/structure/window/openclose{
 	dir = 4
@@ -1327,6 +1342,12 @@
 /obj/effect/decal/cleanable/food/mess/rotting,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/rtfield/plague_district)
+"bWH" = (
+/obj/structure/door/iron{
+	lockid = "mercenary"
+	},
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/exposed/townhamlet)
 "bWX" = (
 /turf/open/floor/dirt,
 /area/rogue/outdoors/rtfield/hamlet)
@@ -1490,6 +1511,9 @@
 /obj/structure/fluff/clodpile,
 /turf/open/floor/grass,
 /area/rogue/outdoors/rtfield/plague_district)
+"cei" = (
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "cez" = (
 /obj/effect/decal/cleanable/blood_neu/random,
 /obj/structure/table/optable,
@@ -2723,6 +2747,10 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/naturalstone,
 /area/rogue/under/cave/abandoned_mine)
+"dJc" = (
+/obj/structure/ladder,
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "dJp" = (
 /obj/structure/fluff/statue/femalestatue,
 /turf/open/floor/blocks/stonered/tiny,
@@ -2752,6 +2780,10 @@
 	},
 /turf/open/floor/blocks/moss,
 /area/rogue/indoors/town/clinic_large)
+"dJO" = (
+/mob/living/carbon/human/species/zizombie/npc/militiamen,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/rtfield/plague_district)
 "dKg" = (
 /obj/structure/bars/pipe{
 	dir = 1;
@@ -3727,6 +3759,12 @@
 /obj/structure/ladder,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town)
+"eZA" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/exposed/townhamlet)
 "eZT" = (
 /obj/structure/fluff/shipssprote{
 	dir = 8;
@@ -4559,6 +4597,9 @@
 "gdk" = (
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/rtfield/hamlet)
+"gdr" = (
+/turf/closed/wall/mineral/wood,
+/area/rogue/outdoors)
 "gdH" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border_c2"
@@ -4672,6 +4713,13 @@
 /obj/effect/decal/shadow_floor,
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/hamlet)
+"gpn" = (
+/obj/machinery/light/fueled/hearth{
+	pixel_x = 0;
+	pixel_y = 5
+	},
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/exposed/townhamlet)
 "gpR" = (
 /obj/item/weapon/shovel,
 /turf/open/floor/dirt/road,
@@ -5524,6 +5572,19 @@
 	},
 /turf/open/floor/ruinedwood/spiralfade,
 /area/rogue/indoors/town/tavern/saiga)
+"hyo" = (
+/obj/structure/table/wood/crafted,
+/obj/structure/fluff/walldeco/wantedposter,
+/obj/item/paper,
+/obj/item/natural/feather{
+	pixel_x = 5
+	},
+/obj/item/candle/yellow/lit/infinite{
+	pixel_x = -12;
+	pixel_y = 1
+	},
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "hyp" = (
 /obj/effect/spawner/map_spawner/mountain_tree,
 /obj/structure/flora/rogueflower/ywflowers,
@@ -6992,6 +7053,10 @@
 /obj/item/reagent_containers/food/snacks/smallrat,
 /turf/open/floor/cobblerock/alt,
 /area/rogue/under/town/basement)
+"jsB" = (
+/mob/living/carbon/human/species/zizombie/npc/peasant,
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/rtfield/plague_district)
 "jsO" = (
 /obj/structure/closet/crate/crafted_closet/inn,
 /turf/open/floor/ruinedwood/spiralfade,
@@ -7212,10 +7277,9 @@
 /turf/closed/wall/mineral/decowood,
 /area/rogue/indoors/town/tavern/saiga)
 "jFF" = (
-/obj/structure/chair/stool,
-/obj/effect/landmark/start/mercenary,
-/turf/open/floor/wood,
-/area/rogue/indoors/town/tavern/saiga)
+/mob/living/carbon/human/species/zizombie/npc/peasant,
+/turf/open/floor/grass,
+/area/rogue/outdoors/rtfield/plague_district)
 "jFI" = (
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/tavern/saiga)
@@ -7439,6 +7503,7 @@
 	anchored = 1;
 	layer = 1.9
 	},
+/mob/living/carbon/human/species/zizombie/npc/peasant,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/rtfield/plague_district)
 "jZy" = (
@@ -10038,6 +10103,10 @@
 "nmW" = (
 /turf/closed/wall/mineral/wooddark/vertical,
 /area/rogue/outdoors/exposed/townhamlet)
+"nnC" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/turf/open/floor/wood,
+/area/rogue/outdoors/exposed/townhamlet)
 "nnH" = (
 /obj/structure/door/stone{
 	lockid = null;
@@ -10821,6 +10890,11 @@
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/garrison)
+"olt" = (
+/obj/structure/closet/dirthole/grave,
+/mob/living/carbon/human/species/zizombie/npc/peasant,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/rtfield/plague_district)
 "omr" = (
 /obj/structure/rack,
 /obj/item/ammo_holder/quiver/bolts,
@@ -11399,6 +11473,12 @@
 	dir = 8
 	},
 /area/rogue/outdoors/town/roofs)
+"paJ" = (
+/obj/effect/landmark/start/mercenary{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "paM" = (
 /obj/structure/fermentation_keg/random,
 /turf/open/floor/dirt/road,
@@ -11683,6 +11763,13 @@
 /obj/structure/roguetent,
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/shelter/mountains)
+"pwC" = (
+/obj/structure/fluff/railing/fence{
+	dir = 4
+	},
+/obj/structure/handcart,
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/exposed/townhamlet)
 "pwG" = (
 /obj/structure/rack,
 /obj/item/candle/yellow,
@@ -11988,6 +12075,9 @@
 /obj/structure/punji_sticks,
 /turf/open/water/swamp,
 /area/rogue/outdoors/exposed/under/sewer)
+"pQI" = (
+/turf/open/floor/wood,
+/area/rogue/outdoors)
 "pQU" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/hankyu,
@@ -13332,6 +13422,12 @@
 	},
 /turf/open/floor/tile/bath,
 /area/rogue/indoors/town/bath/redhouse)
+"rsa" = (
+/obj/structure/bed/sleepingbag,
+/obj/machinery/light/fueled/wallfire/candle/l,
+/obj/item/bedsheet/wool,
+/turf/open/floor/wood,
+/area/rogue/under/catacombs)
 "rsH" = (
 /obj/structure/flora/rock/pile,
 /obj/structure/fluff/railing/stonehedge{
@@ -15616,9 +15712,6 @@
 /area/rogue/outdoors/rtfield/outlaw)
 "uwm" = (
 /obj/structure/chair/stool,
-/obj/effect/landmark/start/mercenary{
-	dir = 1
-	},
 /turf/open/floor/wood,
 /area/rogue/indoors/town/tavern/saiga)
 "uwW" = (
@@ -17205,6 +17298,12 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/naturalstone/rough,
 /area/rogue/under/town/caverogue/deep)
+"wyQ" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/rogue/outdoors)
 "wyS" = (
 /obj/structure/remains/generic,
 /turf/open/floor/dirt/road,
@@ -17986,6 +18085,9 @@
 	},
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/dwarfin)
+"xFL" = (
+/turf/closed/wall/mineral/wood,
+/area/rogue/outdoors/exposed/townhamlet)
 "xGo" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -18046,6 +18148,10 @@
 	},
 /turf/open/floor/naturalstone,
 /area/rogue/outdoors/mountains)
+"xKq" = (
+/obj/structure/ladder,
+/turf/open/floor/wood,
+/area/rogue/outdoors/exposed/townhamlet)
 "xKJ" = (
 /turf/open/floor/grass,
 /area/rogue/outdoors/mountains)
@@ -18119,6 +18225,10 @@
 "xRj" = (
 /turf/closed/wall/mineral/decostone,
 /area/rogue/indoors/town/church)
+"xRO" = (
+/mob/living/carbon/human/species/zizombie/npc/peasant,
+/turf/open/floor/cobblerock/alt,
+/area/rogue/outdoors/rtfield/plague_district)
 "xSL" = (
 /turf/closed/wall/mineral/roofwall/middle,
 /area/rogue/indoors/town/bath/redhouse)
@@ -18347,6 +18457,9 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/shop)
+"ygl" = (
+/turf/closed/wall/mineral/stone,
+/area/rogue/outdoors/exposed/townhamlet)
 "ygI" = (
 /obj/effect/spawner/map_spawner/mountain_tree,
 /turf/open/floor/grass,
@@ -18444,9 +18557,6 @@
 /area/rogue/indoors/town/church)
 "ylN" = (
 /obj/item/chair/stool/bar/crafted,
-/obj/effect/landmark/start/mercenary{
-	dir = 1
-	},
 /turf/open/floor/wood,
 /area/rogue/indoors/town/tavern/saiga)
 "ylP" = (
@@ -48286,7 +48396,7 @@ fZm
 byK
 uDr
 uDr
-uDr
+jjN
 uDr
 uDr
 uDr
@@ -48488,12 +48598,12 @@ fZm
 byK
 uDr
 uDr
-uDr
-uDr
-uDr
-uDr
-uDr
-uDr
+jjN
+jjN
+jjN
+jjN
+jjN
+jjN
 uDr
 jjN
 bBU
@@ -48690,11 +48800,11 @@ fZm
 byK
 uDr
 uDr
-uDr
-uDr
-uDr
-uDr
-uDr
+jjN
+boq
+rsa
+boq
+jjN
 uDr
 uDr
 jjN
@@ -48892,11 +49002,11 @@ fZm
 byK
 uDr
 uDr
-uDr
-uDr
-uDr
-uDr
-uDr
+jjN
+paJ
+paJ
+paJ
+jjN
 uDr
 uDr
 bZv
@@ -49094,11 +49204,11 @@ fZm
 byK
 uDr
 uDr
-uDr
-uDr
-uDr
-uDr
-uDr
+jjN
+hyo
+dJc
+cei
+jjN
 uDr
 uDr
 bZv
@@ -49296,11 +49406,11 @@ fZm
 byK
 uDr
 uDr
-uDr
-uDr
-uDr
-uDr
-uDr
+jjN
+jjN
+jjN
+jjN
+jjN
 uDr
 uDr
 bZv
@@ -49498,11 +49608,11 @@ fZm
 byK
 uDr
 uDr
+jjN
 uDr
 uDr
 uDr
-uDr
-uDr
+jjN
 uDr
 uDr
 bZv
@@ -80587,7 +80697,7 @@ ngU
 ngU
 ngU
 ngU
-jFF
+uwm
 rjC
 sZD
 uwm
@@ -80789,7 +80899,7 @@ ngU
 ngU
 ngU
 ngU
-jFF
+uwm
 gBt
 slW
 ylN
@@ -86214,7 +86324,7 @@ jbM
 jbM
 sVA
 sVA
-bIA
+olt
 jIN
 iLb
 iLb
@@ -87635,7 +87745,7 @@ sVA
 huC
 sVA
 sVA
-sVA
+aVk
 sVA
 sVA
 jIN
@@ -88691,7 +88801,7 @@ ahK
 ahK
 ahK
 uzL
-uzL
+ahK
 uzL
 ahK
 ahK
@@ -88816,7 +88926,7 @@ kzh
 jbM
 jbM
 jbM
-jbM
+jsB
 jbM
 jbM
 jbM
@@ -88891,10 +89001,10 @@ uzL
 uzL
 uzL
 uzL
-uzL
-uzL
-uzL
-uzL
+ygl
+xFL
+eZA
+ygl
 ahK
 ahK
 tUg
@@ -89092,11 +89202,11 @@ fKn
 uzL
 uzL
 uzL
-uzL
-uzL
-uzL
-uzL
-uzL
+ygl
+ygl
+aEK
+pKh
+xFL
 ahK
 ahK
 tUg
@@ -89293,12 +89403,12 @@ fKn
 fKn
 uzL
 uzL
-uzL
-uzL
-uzL
-uzL
-uzL
 ahK
+ygl
+nnC
+pKh
+pKh
+bWH
 ahK
 ahK
 ahK
@@ -89495,12 +89605,12 @@ fKn
 fKn
 uzL
 uzL
-uzL
-uzL
-uzL
-uzL
 ahK
-ahK
+ygl
+xKq
+pKh
+gpn
+xFL
 ahK
 ahK
 uzL
@@ -89697,12 +89807,12 @@ fKn
 fKn
 fKn
 uzL
-uzL
-uzL
-uzL
 ahK
 ahK
-ahK
+ygl
+pwC
+bOa
+ygl
 ahK
 ahK
 ahK
@@ -89884,7 +89994,7 @@ jbM
 iLb
 aOW
 sVA
-sVA
+aVk
 sVA
 sVA
 sVA
@@ -91095,7 +91205,7 @@ sVA
 hFk
 sVA
 jbM
-jbM
+jsB
 dPF
 jbM
 jbM
@@ -91260,7 +91370,7 @@ sVA
 sVA
 xcG
 sVA
-sVA
+dJO
 sVA
 sVA
 sVA
@@ -91707,7 +91817,7 @@ sVA
 jbM
 sVA
 xcG
-jbM
+jsB
 aOW
 aOW
 jbM
@@ -91856,7 +91966,7 @@ sVA
 sVA
 sVA
 jbM
-dPF
+xRO
 jbM
 jbM
 sVA
@@ -94087,7 +94197,7 @@ sVA
 tbr
 sVA
 jbM
-sVA
+aVk
 sVA
 xcG
 sVA
@@ -94548,7 +94658,7 @@ sVA
 sVA
 sVA
 sVA
-fMN
+jFF
 sVA
 jIN
 sVA
@@ -95754,7 +95864,7 @@ aOW
 jbM
 jbM
 xcG
-fMN
+jFF
 sVA
 shr
 shr
@@ -96124,7 +96234,7 @@ sVA
 sVA
 sVA
 sVA
-sVA
+aVk
 sVA
 sVA
 sVA
@@ -96532,7 +96642,7 @@ lqO
 mpa
 sVA
 sVA
-sVA
+aVk
 sVA
 sVA
 sVA
@@ -96978,7 +97088,7 @@ sVA
 sVA
 sVA
 sVA
-sVA
+aVk
 sVA
 sVA
 sVA
@@ -97183,7 +97293,7 @@ huC
 sVA
 sVA
 sVA
-sVA
+aVk
 sVA
 shr
 shr
@@ -129292,9 +129402,9 @@ sNs
 sNs
 sNs
 sNs
+gdr
 sNs
-sNs
-sNs
+gdr
 sNs
 sNs
 sNs
@@ -129493,11 +129603,11 @@ sNs
 sNs
 sNs
 sNs
+gdr
+wyQ
 sNs
-sNs
-sNs
-sNs
-sNs
+pQI
+gdr
 sNs
 sNs
 sNs
@@ -129696,10 +129806,10 @@ sNs
 sNs
 sNs
 sNs
-sNs
-sNs
-sNs
-sNs
+pQI
+pQI
+pQI
+pQI
 sNs
 sNs
 sNs
@@ -129898,10 +130008,10 @@ sNs
 sNs
 sNs
 sNs
+pQI
+pQI
 sNs
-sNs
-sNs
-sNs
+gdr
 sNs
 sNs
 sNs
@@ -130100,9 +130210,9 @@ sNs
 sNs
 sNs
 sNs
-sNs
-sNs
-sNs
+gdr
+pQI
+pQI
 sNs
 sNs
 sNs
