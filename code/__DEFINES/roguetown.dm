@@ -2,7 +2,7 @@
 #define ALL_RACES_LIST			list("human", "rakshari", "dwarf", "elf", "tiefling", "aasimar", "halforc", "orc", "zizombie", "abyssariad") //Stonekeep change. Placed here for the sake of uncompatibility with the modularization.
 
 /// All playable races from character selection menu.
-#define RACES_PLAYER_ALL				list("Humen", "Hollow-Kin", "Harpies", "Rakshari", "Half-Elf", "Half-Drow", "Dark Elf", "Elf", "Dwarf", "Tiefling", "Half-Orc", "Aasimar", "Kobold")
+#define RACES_PLAYER_ALL				list("Humen", "Hollow-Kin", "Harpies", "Rakshari", "Half-Elf", "Half-Drow", "Dark Elf", "Elf", "Dwarf", "Tiefling", "Half-Orc", "Aasimar", "Kobold", "Undine", "Ogrun", "Changeling", "Skylancer")
 
 /// Races not considered discriminated against in Vanderlin. Used for nobility, guards, etc.
 #define RACES_PLAYER_NONDISCRIMINATED	list("Humen", "Half-Elf", "Elf", "Dwarf", "Aasimar")

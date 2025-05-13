@@ -633,7 +633,7 @@ get_accent_list()
 	color_key_defaults = list(KEY_SKIN_COLOR)
 
 // END OF KAIZOKU RACES BODYPARTS
-
+/* Issues? ROGTODO
 /datum/sprite_accessory/detail
 	specuse = list("human", "dwarf", "elf", "aasimar", "tiefling", "halforc", "abyssariad")
 
@@ -667,7 +667,7 @@ get_accent_list()
 	icon = 'modular/stonekeep/kaizoku/icons/body_details/attachment.dmi'
 	name = "Abyss Warrior Irezumi"
 	icon_state = "warrior"
-
+*/
 
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

@@ -82,7 +82,7 @@
 	)
 
 /datum/species/human/halfdrow/check_roundstart_eligible()
-	return TRUE
+	return FALSE // STONEKEEP EDIT
 
 /datum/species/human/halfdrow/get_skin_list()
 	return sortList(list(
