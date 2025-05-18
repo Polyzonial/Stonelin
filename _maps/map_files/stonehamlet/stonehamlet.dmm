@@ -3646,9 +3646,7 @@
 /turf/closed/wall/mineral/wooddark/slitted,
 /area/rogue/indoors/town/church)
 "eUR" = (
-/obj/structure/closet/crate/chest/neu_iron{
-	lockid = "sheriff"
-	},
+/obj/structure/closet/crate/chest/neu_iron,
 /obj/item/paper,
 /obj/item/book/law,
 /turf/open/floor/wood,
@@ -5794,8 +5792,6 @@
 /area/rogue/outdoors/rtfield/plague_district)
 "hLc" = (
 /obj/structure/closet/crate/chest/neu_iron{
-	locked = 1;
-	lockid = "tavern";
 	name = "key chest"
 	},
 /obj/item/key/roomi{
@@ -12318,9 +12314,7 @@
 /obj/item/candle/yellow,
 /obj/item/candle/yellow,
 /obj/item/candle/yellow,
-/obj/structure/closet/crate/chest/neu_fancy{
-	lockid = "lord"
-	},
+/obj/structure/closet/crate/chest/neu_fancy,
 /obj/item/flint,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor/stone)
@@ -13169,9 +13163,7 @@
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/outdoors/exposed/church)
 "rcI" = (
-/obj/structure/closet/crate/chest/neu_iron{
-	lockid = "sheriff"
-	},
+/obj/structure/closet/crate/chest/neu_iron,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor/stone)
 "rdd" = (
