@@ -854,7 +854,7 @@
 /area/rogue/outdoors/exposed/townhamlet)
 "bqg" = (
 /obj/structure/door/window,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor/stone)
 "bqq" = (
@@ -2123,7 +2123,7 @@
 	name = "gatehouse"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor/stone)
 "cXp" = (
@@ -3416,7 +3416,7 @@
 	name = "barracks"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/garrison/garrison,
+/obj/effect/mapping_helpers/door/access/garrison/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/garrison)
 "eAl" = (
@@ -5131,7 +5131,7 @@
 	lockid = null;
 	name = "pilgrims hall"
 	},
-/obj/effect/mapping_helpers/door/access/church/church,
+/obj/effect/mapping_helpers/door/access/church/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/church)
 "gSj" = (
@@ -7485,7 +7485,7 @@
 	name = "hall of worship"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/church/church,
+/obj/effect/mapping_helpers/door/access/church/general,
 /turf/open/floor/church,
 /area/rogue/indoors/town/church/chapel)
 "jWd" = (
@@ -7906,7 +7906,7 @@
 /obj/structure/door/fancy{
 	name = "war room"
 	},
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/manor/stone)
 "kzy" = (
@@ -8815,7 +8815,7 @@
 	lockid = "manor";
 	name = "throne room"
 	},
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/carpet/lord/right,
 /area/rogue/indoors/town/manor/stone)
 "lKt" = (
@@ -8850,7 +8850,7 @@
 	name = "gatehouse"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/garrison/garrison,
+/obj/effect/mapping_helpers/door/access/garrison/general,
 /turf/open/floor/wood,
 /area/rogue/outdoors/exposed/manorgarri)
 "lPa" = (
@@ -9930,7 +9930,7 @@
 	lockid = null;
 	name = "temple cellar"
 	},
-/obj/effect/mapping_helpers/door/access/church/church,
+/obj/effect/mapping_helpers/door/access/church/general,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/church)
 "naZ" = (
@@ -11915,7 +11915,7 @@
 /area/rogue/indoors/town/manor/stone)
 "pDn" = (
 /obj/structure/door/window,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/dirt,
 /area/rogue/indoors/town/manor/stone)
 "pDX" = (
@@ -12479,7 +12479,7 @@
 	name = "gatehouse"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/garrison/garrison,
+/obj/effect/mapping_helpers/door/access/garrison/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor/stone)
 "qlo" = (
@@ -12755,7 +12755,7 @@
 	name = "upper levels"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/manor/stone)
 "qDP" = (
@@ -12909,7 +12909,7 @@
 	lockid = null
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/concrete,
 /area/rogue/outdoors/exposed/under/basement)
 "qLx" = (
@@ -13279,7 +13279,7 @@
 	name = "garden"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/manor/stone)
 "rjm" = (
@@ -13319,7 +13319,7 @@
 	lockid = null;
 	name = "wine cellar"
 	},
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/cobble,
 /area/rogue/outdoors/exposed/under/basement)
 "rkz" = (
@@ -14792,7 +14792,7 @@
 	lockid = "manor";
 	name = "throne room"
 	},
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/carpet/lord/left,
 /area/rogue/indoors/town/manor/stone)
 "tku" = (
@@ -18107,7 +18107,7 @@
 	name = "servants hall"
 	},
 /obj/effect/mapping_helpers/door/locker,
-/obj/effect/mapping_helpers/door/access/manor/manor,
+/obj/effect/mapping_helpers/door/access/manor/general,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/manor/stone)
 "xHu" = (
