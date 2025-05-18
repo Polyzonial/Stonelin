@@ -1905,13 +1905,13 @@
 /turf/open/floor/blocks/moss,
 /area/rogue/outdoors/rtfield/plague_district)
 "cKm" = (
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /obj/structure/closet/crate/chest/old_crate,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/church)
 "cKx" = (
@@ -3316,10 +3316,10 @@
 /area/rogue/indoors/town)
 "ewr" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/town/manor/stone)
 "ewL" = (
@@ -3960,12 +3960,12 @@
 /turf/open/floor/tile/bath,
 /area/rogue/indoors/town/bath/redhouse)
 "foF" = (
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/pear,
-/obj/item/reagent_containers/food/snacks/produce/pear,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/pear,
+/obj/item/reagent_containers/food/snacks/produce/fruit/pear,
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/exposed/under/basement)
@@ -4758,9 +4758,9 @@
 "grE" = (
 /obj/structure/closet/crate/chest/crate,
 /obj/item/neuFarm/seed/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/exposed/under/basement)
 "grL" = (
@@ -5322,10 +5322,10 @@
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/outdoors/town/roofs)
 "hgg" = (
-/obj/item/reagent_containers/food/snacks/produce/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
 /turf/open/floor/dirt/road,
 /area/rogue/under/town/basement)
 "hgy" = (
@@ -5352,8 +5352,8 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/rtfield/hamlet)
 "hig" = (
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/cabbage,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/cabbage,
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/dirt/road,
 /area/rogue/under/town/basement)
@@ -5856,11 +5856,11 @@
 /area/rogue/indoors/town/hamlet)
 "hNo" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/church)
 "hNt" = (
@@ -6599,7 +6599,7 @@
 /obj/structure/closet/crate/drawer/random,
 /obj/item/weapon/knife/dagger,
 /obj/item/reagent_containers/glass/bottle/poison,
-/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison,
+/obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry/poison,
 /turf/open/floor/ruinedwood/chevron,
 /area/rogue/indoors/town/bath/redhouse)
 "iNs" = (
@@ -6857,9 +6857,9 @@
 /turf/open/floor/blocks,
 /area/rogue/under/catacombs)
 "jdu" = (
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/exposed/under/basement)
@@ -7843,11 +7843,11 @@
 /area/rogue/outdoors/exposed/church)
 "kwa" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/town/manor/stone)
 "kwb" = (
@@ -8750,9 +8750,9 @@
 	name = "cooks chest"
 	},
 /obj/item/clothing/pants/tights/green,
-/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison,
-/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison,
-/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison,
+/obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry/poison,
+/obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry/poison,
+/obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry/poison,
 /turf/open/floor/dirt/road,
 /area/rogue/under/town/basement)
 "lEY" = (
@@ -9706,9 +9706,9 @@
 /area/rogue/outdoors/exposed/townhamlet)
 "mMf" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/exposed/townhamlet)
 "mMz" = (
@@ -10084,12 +10084,12 @@
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/tavern/saiga)
 "nlT" = (
-/obj/item/reagent_containers/food/snacks/produce/jacksberry,
+/obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry,
 /obj/structure/closet/crate/chest/wicker,
 /obj/item/kitchen/spoon,
-/obj/item/reagent_containers/food/snacks/produce/turnip,
-/obj/item/reagent_containers/food/snacks/produce/turnip,
-/obj/item/reagent_containers/food/snacks/produce/turnip,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/turnip,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/turnip,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/turnip,
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/shelter/rtfield)
 "nmv" = (
@@ -10805,8 +10805,8 @@
 /area/rogue/indoors/town/garrison)
 "ofD" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/exposed/under/basement)
 "ogf" = (
@@ -13010,7 +13010,6 @@
 /area/rogue/indoors/town/manor/stone)
 "qSM" = (
 /obj/structure/closet/crate/chest/neu,
-/obj/item/reagent_containers/glass/bottle/healthpot,
 /obj/machinery/light/fueled/wallfire/candle/l,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/shop)
@@ -15255,10 +15254,10 @@
 /area/rogue/indoors/town/manor/stone)
 "tRU" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/potato,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/church)
 "tRX" = (
@@ -85967,7 +85966,7 @@ ahK
 ahK
 ahK
 ahK
-ahK
+nBJ
 ahK
 ahK
 ahK
@@ -86171,7 +86170,7 @@ uzL
 nBJ
 nBJ
 nBJ
-ahK
+nBJ
 ahK
 ahK
 ahK
@@ -86576,7 +86575,7 @@ nBJ
 nBJ
 nBJ
 ahK
-ahK
+nBJ
 ahK
 ahK
 ahK
