@@ -3177,10 +3177,7 @@
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor/stone)
 "eoj" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	locked = 0;
-	lockid = "merchant"
-	},
+/obj/structure/closet/crate/crafted_closet,
 /obj/item/reagent_containers/powder/spice,
 /turf/open/floor/carpet/hamlet,
 /area/rogue/indoors/town/shop)
@@ -12010,8 +12007,7 @@
 /turf/open/floor/ruinedwood/spiralfade,
 /area/rogue/indoors/town/hamlet)
 "pKd" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	lockid = "bath2";
+/obj/structure/closet/crate/crafted_closet{
 	name = "locker II"
 	},
 /obj/effect/decal/shadow_floor{
@@ -16927,10 +16923,7 @@
 /turf/open/floor/concrete,
 /area/rogue/under/town/basement)
 "vZA" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	locked = 0;
-	lockid = null
-	},
+/obj/structure/closet/crate/crafted_closet,
 /obj/item/paper,
 /obj/item/paper,
 /obj/item/paper,
@@ -17914,8 +17907,7 @@
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor/stone)
 "xng" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	lockid = "bath1";
+/obj/structure/closet/crate/crafted_closet{
 	name = "locker I"
 	},
 /obj/effect/decal/shadow_floor{
