@@ -2356,9 +2356,6 @@
 /area/rogue/outdoors/exposed/townhamlet)
 "dms" = (
 /obj/structure/closet/crate/chest/neu_fancy{
-	locked = 1;
-	lockid = "steward";
-	masterkey = 1;
 	name = "key chest"
 	},
 /obj/item/key/clinic,
@@ -7922,8 +7919,6 @@
 /area/rogue/outdoors/town/roofs)
 "kAv" = (
 /obj/structure/door/swing_door/horizontal{
-	keylock = 1;
-	lockid = null;
 	name = "farm"
 	},
 /obj/effect/mapping_helpers/door/locker,
@@ -11301,9 +11296,7 @@
 /turf/open/floor/blocks/moss,
 /area/rogue/outdoors/exposed/townhamlet)
 "oON" = (
-/obj/structure/fake_machine/vendor{
-	keycontrol = "blacksmith"
-	},
+/obj/structure/fake_machine/vendor,
 /turf/closed/wall/mineral/stonebrick,
 /area/rogue/indoors/town/dwarfin)
 "oPD" = (
@@ -14371,7 +14364,6 @@
 /area/rogue/outdoors/rtfield/plague_district)
 "sGC" = (
 /obj/structure/closet/crate/chest/neu_fancy{
-	lockid = "mage";
 	name = "medicine chest"
 	},
 /obj/item/reagent_containers/powder/spice,
@@ -14411,9 +14403,7 @@
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor/stone)
 "sIR" = (
-/obj/structure/closet/crate/chest/neu_fancy{
-	lockid = "nitemaster"
-	},
+/obj/structure/closet/crate/chest/neu_fancy,
 /obj/item/paper,
 /obj/item/paper,
 /obj/item/paper,
@@ -15020,7 +15010,6 @@
 /area/rogue/indoors/town/garrison)
 "tAJ" = (
 /obj/structure/closet/crate/drawer/inn{
-	lockid = "tavern";
 	name = "innkeepers drawer";
 	pixel_y = 4
 	},
@@ -16643,9 +16632,7 @@
 /turf/open/floor/ruinedwood,
 /area/rogue/outdoors/town/roofs)
 "vEs" = (
-/obj/structure/fake_machine/vendor{
-	keycontrol = "tailor"
-	},
+/obj/structure/fake_machine/vendor,
 /turf/closed/wall/mineral/decowood,
 /area/rogue/indoors/town/hamlet)
 "vEF" = (
@@ -16703,9 +16690,7 @@
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town)
 "vJa" = (
-/obj/structure/fake_machine/vendor{
-	keycontrol = "doctor"
-	},
+/obj/structure/fake_machine/vendor,
 /turf/closed/wall/mineral/wooddark/vertical,
 /area/rogue/indoors/town/clinic_large)
 "vJU" = (
@@ -18463,8 +18448,6 @@
 /area/rogue/outdoors/mountains)
 "yht" = (
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "adventurer";
 	name = "silver certifications"
 	},
 /obj/item/clothing/ring/adventurer/silver,
