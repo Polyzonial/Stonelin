@@ -309,7 +309,7 @@
 /datum/sleep_adv/proc/grant_inspiration_xp(skill_amt)
 	var/list/viable_skills = list()
 	var/list/inspired_skill_names = list()
-	for(var/skill_type in SSskills.all_skills)
+	for(var/skill_type in SSskills.inspiration_skills)
 		var/datum/skill/skill = GetSkillRef(skill_type)
 		if(!skill.randomable_dream_xp)
 			continue

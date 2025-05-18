@@ -118,7 +118,7 @@ Admin logging is provided for orgasms and if you try to initiate sex with corpse
 	if(!ishuman(new_target))
 		return
 	set_target(new_target)
-	show_ui()
+	show_ui(mob/living/user)
 
 /datum/sex_controller/proc/cum_onto()
 	log_combat(user, target, "came onto the target")

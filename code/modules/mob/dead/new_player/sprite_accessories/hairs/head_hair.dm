@@ -1369,7 +1369,7 @@
 
 /datum/sprite_accessory/hair/head/son
 	name = "Son"
-	icon_state = "sun"
+	icon_state = "son"
 	gender = MALE
 	specuse = list("human", "dwarf", "aasimar", "tiefling", "halforc")
 
