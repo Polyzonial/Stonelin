@@ -2104,8 +2104,6 @@
 /area/rogue/indoors/town/shop)
 "cWO" = (
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "adventurer";
 	name = "basic certifications"
 	},
 /obj/item/clothing/ring/adventurer/bronze,
@@ -6259,8 +6257,6 @@
 /area/rogue/indoors/town/manor/stone)
 "iox" = (
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "merchant";
 	max_integrity = 20000
 	},
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
@@ -10764,8 +10760,6 @@
 /obj/item/key/church,
 /obj/item/key/graveyard,
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "priest";
 	name = "key chest"
 	},
 /turf/open/floor/ruinedwood{
@@ -15010,7 +15004,6 @@
 /area/rogue/indoors/town/garrison)
 "tAJ" = (
 /obj/structure/closet/crate/drawer/inn{
-	name = "innkeepers drawer";
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/glass/bottle/wine,
@@ -15303,8 +15296,6 @@
 /area/rogue/outdoors/mountains)
 "tVH" = (
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "adventurer";
 	name = "iron certifications"
 	},
 /obj/item/clothing/ring/adventurer/iron,
@@ -16295,8 +16286,6 @@
 /area/rogue/under/town/basement)
 "vgI" = (
 /obj/structure/closet/crate/chest/neu{
-	locked = 1;
-	lockid = "adventurer";
 	name = "gold certifications"
 	},
 /obj/item/clothing/ring/adventurer/gold,
