@@ -102,7 +102,7 @@
 	salvage_amount = 1
 	item_weight = 3
 
-/*//obj/item/clothing/shoes/boots/furlinedanklets
+/obj/item/clothing/shoes/boots/furlinedanklets
 	name = "fur lined anklets"
 	desc = "Leather anklets lined with fur, foot remains bare."
 	gender = PLURAL
@@ -125,7 +125,7 @@
 	armor = list("blunt" = 5, "slash" = 5, "stab" = 5,  "piercing" = 0, "fire" = 0, "acid" = 0) //Thinks its fair for a piece of cloth and fiber.
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
-*/
+
 
 /obj/item/clothing/shoes/boots/armor/vampire
 	name = "ancient ceremonial boots"

@@ -24,19 +24,19 @@
 	backr = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/weapon/knife/dagger = 1, /obj/item/storage/belt/pouch/coins/poor = 1)
 	if(H.mind)
-		H.mind?.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 
 		H.merctype = 6
 
@@ -57,7 +57,7 @@
 			neck = /obj/item/clothing/neck/highcollier/iron
 			wrists = /obj/item/clothing/wrists/bracers/splint
 			shirt = /obj/item/clothing/armor/gambeson
-			H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		if("Valorian Swordsman") //Mercenary Swordsman with lighter armor and sword skill, og roguetown warrior styled
 			backl= /obj/item/weapon/shield/tower/buckleriron
 			r_hand = /obj/item/weapon/sword/iron
@@ -66,8 +66,8 @@
 			shirt = /obj/item/clothing/armor/gambeson/light
 			wrists = /obj/item/clothing/wrists/bracers/leather
 			armor = /obj/item/clothing/armor/chainmail/iron
-			H.mind?.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-			H.mind?.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 		if("Valorian Crossbowman") //Mercenary boltslinger with different gear set
 			backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			r_hand = /obj/item/weapon/mace/cudgel/carpenter
@@ -77,5 +77,5 @@
 			armor = /obj/item/clothing/armor/leather/splint
 			wrists = /obj/item/clothing/wrists/bracers/leather
 			beltl = /obj/item/ammo_holder/quiver/bolts
-			H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
-			H.mind?.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
