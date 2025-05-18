@@ -6061,8 +6061,6 @@
 /area/rogue/indoors/town)
 "gDv" = (
 /obj/structure/door/stone{
-	locked = 0;
-	lockid = "priest";
 	name = "Sick Ward"
 	},
 /turf/open/floor/hexstone,
@@ -17569,9 +17567,7 @@
 	},
 /area/rogue/indoors/town/shop)
 "tyx" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	lockid = "nightmaiden"
-	},
+/obj/structure/closet/crate/crafted_closet/lord,
 /obj/item/natural/cloth,
 /turf/open/floor/tile/bfloorz,
 /area/rogue/indoors/town/bath)
