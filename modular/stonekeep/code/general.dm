@@ -859,7 +859,7 @@
 /obj/item/reagent_containers/food/snacks
 	var/hard_distill
 
-/obj/item/reagent_containers/food/snacks/produce/onion
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion
 	can_distill = FALSE
 	hard_distill = TRUE
 

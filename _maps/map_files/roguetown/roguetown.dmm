@@ -2903,13 +2903,13 @@
 /obj/structure/closet/crate/chest/wicker,
 /obj/item/reagent_containers/food/snacks/produce/potato,
 /obj/item/reagent_containers/food/snacks/produce/potato,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/cabbage,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/cabbage,
 /turf/open/floor/cobble,
 /area/rogue/under/town/basement)
 "djr" = (
@@ -6061,8 +6061,6 @@
 /area/rogue/indoors/town)
 "gDv" = (
 /obj/structure/door/stone{
-	locked = 0;
-	lockid = "priest";
 	name = "Sick Ward"
 	},
 /turf/open/floor/hexstone,
@@ -9214,15 +9212,15 @@
 "kjc" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/structure/rack/shelf,
-/obj/item/reagent_containers/food/snacks/produce/onion,
-/obj/item/reagent_containers/food/snacks/produce/cabbage,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/cabbage,
 /obj/item/reagent_containers/food/snacks/cheddar,
 /obj/item/reagent_containers/food/snacks/spiderhoney,
 /obj/item/reagent_containers/food/snacks/produce/potato,
 /obj/item/reagent_containers/food/snacks/produce/potato,
 /obj/item/reagent_containers/food/snacks/truffles,
 /obj/item/reagent_containers/food/snacks/truffles,
-/obj/item/reagent_containers/food/snacks/produce/onion,
+/obj/item/reagent_containers/food/snacks/produce/vegetable/onion,
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/manor)
 "kjw" = (
@@ -14234,14 +14232,14 @@
 /area/rogue/outdoors/town)
 "pAd" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
 /turf/open/floor/ruinedwood{
 	dir = 1;
 	icon_state = "vertw"
@@ -17569,9 +17567,7 @@
 	},
 /area/rogue/indoors/town/shop)
 "tyx" = (
-/obj/structure/closet/crate/crafted_closet/lord{
-	lockid = "nightmaiden"
-	},
+/obj/structure/closet/crate/crafted_closet/lord,
 /obj/item/natural/cloth,
 /turf/open/floor/tile/bfloorz,
 /area/rogue/indoors/town/bath)
@@ -19569,9 +19565,9 @@
 /obj/item/reagent_containers/food/snacks/egg,
 /obj/item/reagent_containers/powder/salt,
 /obj/item/reagent_containers/powder/salt,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
 /turf/open/floor/tile,
 /area/rogue/indoors)
 "vCv" = (
@@ -19650,11 +19646,11 @@
 	icon_state = "tablewood2";
 	dir = 10
 	},
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /turf/open/floor/wood/nosmooth,
 /area/rogue/under/town/basement)
 "vJl" = (
@@ -19933,12 +19929,12 @@
 /area/rogue/under/town/basement)
 "vUu" = (
 /obj/structure/closet/crate/chest/old_crate,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
 /obj/item/reagent_containers/food/snacks/butter,
 /obj/item/reagent_containers/food/snacks/butter,
 /turf/open/floor/woodturned,
@@ -21474,8 +21470,8 @@
 /obj/item/alch/sinew,
 /obj/item/alch/sinew,
 /obj/item/alch/sinew,
-/obj/item/reagent_containers/food/snacks/produce/apple,
-/obj/item/reagent_containers/food/snacks/produce/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
+/obj/item/reagent_containers/food/snacks/produce/fruit/apple,
 /obj/item/alch/bone,
 /obj/item/alch/bone,
 /obj/item/alch/bone,
@@ -21994,16 +21990,16 @@
 /area/rogue/under/town/basement)
 "yka" = (
 /obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/wheat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
-/obj/item/reagent_containers/food/snacks/produce/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/wheat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
+/obj/item/reagent_containers/food/snacks/produce/grain/oat,
 /turf/open/floor/hexstone,
 /area/rogue/indoors/town/church)
 "ykb" = (
