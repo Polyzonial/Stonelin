@@ -56,9 +56,7 @@
 					user.put_in_hands(U)	//STONEKEEP EDIT END
 
 /mob/living/carbon/human/Initialize()
-#ifdef MATURESERVER	//STONEKEEP EDIT START
-	sexcon = new /datum/sex_controller(src)
-#endif	//STONEKEEP EDIT END
+	sexcon = new /datum/sex_controller(src) //STONEKEEP EDIT
 	// verbs += /mob/living/proc/mob_sleep
 	verbs += /mob/living/proc/lay_down
 
