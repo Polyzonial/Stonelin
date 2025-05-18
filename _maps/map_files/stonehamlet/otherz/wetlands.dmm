@@ -658,10 +658,7 @@
 /turf/closed/wall/mineral/stone/moss/red,
 /area/rogue/outdoors/bog/wetlands)
 "kq" = (
-/obj/structure/closet/crate/drawer{
-	keylock = 1;
-	lockid = "bog_gatehouse"
-	},
+/obj/structure/closet/crate/drawer,
 /obj/item/needle,
 /turf/open/floor/blocks,
 /area/rogue/indoors)
