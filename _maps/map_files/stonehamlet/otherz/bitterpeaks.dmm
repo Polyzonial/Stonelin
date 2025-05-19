@@ -2149,7 +2149,7 @@
 /obj/structure/door/stone{
 	lockid = "mansionvampire"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/hexstone,
 /area/rogue/indoors/vampire_manor)
 "Pv" = (

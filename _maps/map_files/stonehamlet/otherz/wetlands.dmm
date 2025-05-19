@@ -369,7 +369,7 @@
 	lockid = "tollhouse";
 	name = "old tollhouse"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /obj/structure/barricade/wooden{
 	layer = 3;
 	plane = -3
@@ -490,7 +490,7 @@
 	lockid = "tollhouse";
 	name = "old tollhouse"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /obj/structure/barricade/wooden{
 	layer = 3;
 	plane = -3
@@ -619,7 +619,7 @@
 	lockid = "tollhouse";
 	name = "old tollhouse"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/cobble,
 /area/rogue/indoors)
 "jF" = (
@@ -712,7 +712,7 @@
 	lockid = "tollhouse";
 	name = "old tollhouse"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/cobble,
 /area/rogue/indoors)
 "ld" = (
