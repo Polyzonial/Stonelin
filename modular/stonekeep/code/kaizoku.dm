@@ -297,6 +297,7 @@ get_accent_list()
 /datum/customizer_choice/organ/ears/kitsune_ears
 	name = "Fox ears"
 	organ_type = /obj/item/organ/ears/kitsune_ears
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/ears/kitsune_upright,
 							/datum/sprite_accessory/ears/kitsune_side,
 							/datum/sprite_accessory/ears/kitsune_thick,
@@ -346,6 +347,7 @@ get_accent_list()
 /datum/customizer_choice/organ/tail/kitsune
 	name = "Fox Tails"
 	organ_type = /obj/item/organ/tail/kitsune
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/tail/onetail,
 							/datum/sprite_accessory/tail/twotails,
 							/datum/sprite_accessory/tail/threetails)
@@ -389,6 +391,7 @@ get_accent_list()
 /datum/customizer_choice/organ/horns/oni
 	name = "Ogrun Horn"
 	organ_type = /obj/item/organ/horns/oni
+	generic_random_pick = TRUE
 	sprite_accessories = list(
 		/datum/sprite_accessory/horns/oni)
 
@@ -420,6 +423,7 @@ get_accent_list()
 /datum/customizer_choice/organ/ears/oni
 	name = "Ogrun ears"
 	organ_type = /obj/item/organ/ears/oni
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/ears/oni)
 
 // SKYLANCERS
@@ -447,6 +451,7 @@ get_accent_list()
 /datum/customizer_choice/organ/tail/tengu
 	name = "Skylancer wings"
 	organ_type = /obj/item/organ/tail/wings
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/tail/tengu)
 
 // TENGU EARS
@@ -469,6 +474,7 @@ get_accent_list()
 /datum/customizer_choice/organ/ears/tengu
 	name = "Skylancer ears"
 	organ_type = /obj/item/organ/ears/tengu
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/ears/tengu)
 
 // UNDINES
@@ -506,6 +512,7 @@ get_accent_list()
 /datum/customizer_choice/organ/tail/kappa
 	name = "Undine shell"
 	organ_type = /obj/item/organ/tail/kappa
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/tail/kappa)
 
 // KAPPA EARS
@@ -521,6 +528,7 @@ get_accent_list()
 /datum/customizer_choice/organ/ears/kappa
 	name = "Undine ears"
 	organ_type = /obj/item/organ/ears/kappa
+	generic_random_pick = TRUE
 	sprite_accessories = list(/datum/sprite_accessory/ears/kappae)
 
 /datum/sprite_accessory/ears/kappae
