@@ -299,7 +299,7 @@
 /obj/structure/door/stone{
 	lockid = "outpost"
 	},
-/obj/effect/mapping_helpers/door/locker,
+/obj/effect/mapping_helpers/access/locker,
 /obj/effect/decal/cleanable/blood_neu/tracks,
 /turf/open/floor/blocks,
 /area/rogue/under/catacombs/dwarfoutpost)
