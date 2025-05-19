@@ -251,7 +251,7 @@
 		/datum/sprite_accessory/hair/head/homewaifu,
 		/datum/sprite_accessory/hair/head/casual,
 		/datum/sprite_accessory/hair/head/martyr,
-		/datum/sprite_accessory/hair/head,
+		/datum/sprite_accessory/hair/head/zamurai,
 		/datum/sprite_accessory/hair/head/ronin,
 		/datum/sprite_accessory/hair/head/freespirit,
 		/datum/sprite_accessory/hair/head/novice,
