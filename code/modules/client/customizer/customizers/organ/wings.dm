@@ -140,3 +140,4 @@
 	sprite_accessories = list(
 		/datum/sprite_accessory/wings/large/harpyswept,
 		)
+
