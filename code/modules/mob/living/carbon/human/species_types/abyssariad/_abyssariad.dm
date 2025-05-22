@@ -378,7 +378,7 @@ GLOBAL_LIST_INIT(abyssal_readme, world.file2list("strings/rt/abyssaltide.json"))
 		playsound(src, 'sound/vo/mobs/bird/birdfly.ogg', 100, TRUE)
 		stop_flight() //Got exhausted? claps you down automatically. You deserved it you little bugger.
 		return TRUE
-	addtimer(CALLBACK(src, .proc/process_flight), 10) // Stamina draining every second
+	addtimer(CALLBACK(src, PROC_REF(process_flight), 10)) // Stamina draining every second
 
 /mob/living/carbon/human/proc/stop_flight()
 	if(!(movement_type & FLYING)) //If you're already on the ground, you're fine. This exists mostly to avoid runtimes.
