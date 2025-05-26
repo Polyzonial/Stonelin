@@ -1015,7 +1015,7 @@
 // ===================================================================
 // SURGING BOLT - ATTACK SPELL, TIER 1. YOU'RE LIKELY TO SPARK YOURSELF.
 // ===================================================================
-obj/effect/proc_holder/spell/invoked/gale_palm
+/obj/effect/proc_holder/spell/invoked/gale_palm
 	name = "Lightening chain"
 	overlay_state = "chain"
 	overlay_icon = 'modular/stonekeep/kaizoku/icons/misc/spells.dmi'

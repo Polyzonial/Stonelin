@@ -399,7 +399,7 @@ GLOBAL_LIST_INIT(abyssal_readme, world.file2list("strings/rt/abyssaltide.json"))
 			if(ismob(pulling))
 				src.pulling.forceMove(target)
 			src.forceMove(target)
-			src.start_pulling(pulling,supress_message = TRUE) // Teleport the silly person. If they are on another Z-level above, then that's their fault. Get clapped ONCE MORE.
+			src.start_pulling(pulling, suppress_message = TRUE) // Teleport the silly person. If they are on another Z-level above, then that's their fault. Get clapped ONCE MORE.
 
 /mob/living/carbon/human/proc/fly_up()
 	set name = "Fly Up"
@@ -431,7 +431,7 @@ GLOBAL_LIST_INIT(abyssal_readme, world.file2list("strings/rt/abyssaltide.json"))
 		if(ismob(pulling))
 			src.pulling.forceMove(target)
 		src.forceMove(target)
-		src.start_pulling(pulling, supress_message = TRUE)
+		src.start_pulling(pulling, suppress_message = TRUE)
 
 ////////////////////////////////////
 // 	 Ogrun Unique Perks      	  //
