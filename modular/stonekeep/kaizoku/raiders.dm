@@ -11,7 +11,6 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 
 /mob/living/carbon/human/species/abyssariad/raider
 	ai_controller = /datum/ai_controller/human_npc
-	mode = AI_IDLE
 	faction = list("burakumin")
 	ambushable = FALSE
 	dodgetime = 3 SECONDS
@@ -37,7 +36,6 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 	d_intent = INTENT_PARRY
 	canparry = TRUE
 	cmode = 1
-	mode = AI_IDLE
 	canparry = TRUE
 	wander = TRUE
 
@@ -64,7 +62,6 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 	defprob = 50
 	configure_mind()
 	d_intent = INTENT_DODGE
-	mode = AI_IDLE
 	dodgetime = 6 SECONDS
 	canparry = TRUE
 
@@ -143,7 +140,6 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 	defprob = 60 //more skilled
 	configure_mind()
 	d_intent = INTENT_PARRY //these ones will parry instead of dodge, the higher the skill the more powerful this is of course
-	mode = AI_IDLE
 	dodgetime = 4 SECONDS
 	canparry = TRUE
 
@@ -225,7 +221,6 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 	defprob = 70 //even more skilled. I don't even know if that works, honestly.
 	configure_mind()
 	d_intent = INTENT_PARRY //these ones will parry instead of dodge, the higher the skill the more powerful this is of course
-	mode = AI_IDLE
 	dodgetime = 4 SECONDS
 	canparry = TRUE
 
