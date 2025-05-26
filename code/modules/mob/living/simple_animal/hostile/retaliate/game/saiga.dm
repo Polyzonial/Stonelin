@@ -235,7 +235,6 @@
 		/datum/pet_command/good_boy,
 		/datum/pet_command/follow,
 		/datum/pet_command/attack,
-		/datum/pet_command/fetch,
 		/datum/pet_command/play_dead,
 		/datum/pet_command/protect_owner,
 		/datum/pet_command/aggressive,

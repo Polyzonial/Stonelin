@@ -21,14 +21,14 @@
 	keeping their trusty steed. They are expected to uphold their oficial duties and following the strict \
 	martial code of the Abyssal Tide, at least on paper."
 	category_tags = list(CTAG_ADVENTURER)
-	horse = /mob/living/simple_animal/hostile/retaliate/saiga/horse/tame/saddled
+	horse = /mob/living/simple_animal/hostile/retaliate/saiga/tame/saddled // placeholder
 
 /datum/outfit/job/sk/adventurer/abyss/zamurai
 	allowed_patrons = list(/datum/patron/abyssanctum/purifier, /datum/patron/abyssanctum/curator, /datum/patron/abyssanctum/tideweaver)
 
 /datum/advclass/combat/sk/abyss/zamurai/equipme(mob/living/carbon/human/H)
 	if(H.gender == FEMALE)
-		horse = /mob/living/simple_animal/hostile/retaliate/saiga/horse/tame/saddled
+		horse = /mob/living/simple_animal/hostile/retaliate/saiga/tame/saddled// placeholder
 	return ..()
 
 /datum/outfit/job/sk/adventurer/abyss/zamurai/pre_equip(mob/living/carbon/human/H)

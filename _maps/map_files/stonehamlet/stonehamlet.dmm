@@ -8066,7 +8066,7 @@
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/shelter/rtfield)
 "kLo" = (
-/mob/living/simple_animal/hostile/retaliate/saiga/horse/tame,
+/mob/living/simple_animal/hostile/retaliate/saiga/horse,
 /turf/open/floor/hay,
 /area/rogue/indoors/town/manor/stone)
 "kLJ" = (

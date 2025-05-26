@@ -207,7 +207,7 @@
 
 
 
-
+// horses runtime init /tame
 
 /mob/living/simple_animal/hostile/retaliate/saiga/horse
 	icon = 'modular/stonekeep/kaizoku/icons/mobs/horse.dmi'
@@ -244,7 +244,6 @@
 	base_strength = 10
 	base_speed = 15
 	childtype = list(/mob/living/simple_animal/hostile/retaliate/saiga/horse/horsekid)
-	ai_controller = /datum/ai_controller/saiga
 
 
 /mob/living/simple_animal/hostile/retaliate/saiga/horse/tamed(mob/user)
