@@ -841,7 +841,8 @@
 		amt2raise += (craftdiff * 10)
 
 	if(amt2raise > 0)
-		user.mind.add_sleep_experience(skillcraft, amt2raise, FALSE)
+		user.adjust_experience(skillcraft, amt2raise, FALSE) // STONEKEEP EDIT
+		// user.mind.add_sleep_experience(skillcraft, amt2raise, FALSE)
 
 /datum/repeatable_crafting_recipe/proc/move_items_back(list/items, mob/user)
 	for(var/obj/item/item in items)

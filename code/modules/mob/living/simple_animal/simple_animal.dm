@@ -386,7 +386,8 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 				playsound(src, 'sound/foley/gross.ogg', 100, FALSE)
 				var/amt2raise = user.STAINT // this is due to the fact that butchering is not as spammable as training a sword because you cant just spam click
 				if(do_after(user, used_time, src))
-					user.mind.add_sleep_experience(/datum/skill/labor/butchering, amt2raise * boon, FALSE)
+					user.adjust_experience(/datum/skill/labor/butchering, amt2raise * boon, FALSE) // STONEKEEP EDIT
+					// user.mind.add_sleep_experience(/datum/skill/labor/butchering, amt2raise * boon, FALSE)
 					butcher(user)
 	..()
 

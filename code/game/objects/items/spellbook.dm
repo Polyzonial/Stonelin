@@ -176,7 +176,8 @@
 	onlearned(user)
 	if(prob(55))
 		to_chat(user, span_notice("Confounded arcyne mysteries, my notes has gone in circles. I must sleep before I can bring myself to open this damned thing again..."))
-		user.mind?.add_sleep_experience(/datum/skill/misc/reading, reader.STAINT*10)
+		user.adjust_experience(/datum/skill/misc/reading, reader.STAINT*10) // STONEKEEP EDIT
+		// user.mind?.add_sleep_experience(/datum/skill/misc/reading, reader.STAINT*10)
 	to_chat(user, span_small("My notes include passages I've read before, but don't understand. I must sleep on their meaning..."))
 
 /obj/item/book/granter/spellbook/onlearned(mob/user)

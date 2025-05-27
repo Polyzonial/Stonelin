@@ -90,7 +90,7 @@
 #define TRAIT_KNOWBANDITS "knowbandits"
 #define TRAIT_KNOWKEEPPLANS "knowkeepplans"
 #define TRAIT_VAMPMANSION "vampiremansion"
-#define TRAIT_VAMP_DREAMS "vamp_dreams"
+#define TRAIT_VAMP_DREAMS "vamp_dreams" // UNUSED ON STONEKEEP
 #define TRAIT_INHUMENCAMP "inhumencamp"
 #define TRAIT_INTRAINING "intraining" //allows certain roles to bypass the average skill limitation of training dummies
 #define TRAIT_STEELHEARTED "steelhearted" //no bad mood from dismembering or seeing this
