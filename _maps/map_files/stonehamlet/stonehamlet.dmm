@@ -5941,7 +5941,7 @@
 	dir = 4;
 	icon_state = "stairs"
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/wood,
 /area/rogue/indoors/town/tavern/saiga)
 "hRH" = (
 /obj/structure/winch{
@@ -9396,7 +9396,7 @@
 /obj/structure/stairs{
 	dir = 8
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/wood,
 /area/rogue/indoors/town/hamlet)
 "mvd" = (
 /obj/effect/decal/shadow_floor{
