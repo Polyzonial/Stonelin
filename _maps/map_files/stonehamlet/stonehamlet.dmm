@@ -7864,9 +7864,7 @@
 	dir = 1;
 	icon_state = "woodwindowdir"
 	},
-/turf/open/floor/ruinedwood{
-	icon_state = "horzw"
-	},
+/turf/open/floor/ruinedwood/alt,
 /area/rogue/indoors/soilsons)
 "kEF" = (
 /obj/structure/roguetent,
@@ -11509,9 +11507,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/ruinedwood{
-	icon_state = "weird1"
-	},
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/shop)
 "pnT" = (
 /obj/structure/flora/grass,
