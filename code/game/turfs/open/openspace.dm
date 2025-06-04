@@ -144,7 +144,7 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 			if(ismob(pulling))
 				user.pulling.forceMove(target)
 			user.forceMove(target)
-			user.start_pulling(pulling,supress_message = TRUE)
+			user.start_pulling(pulling, suppress_message = TRUE)
 			return
 		if(user.m_intent != MOVE_INTENT_SNEAK)
 			playsound(user, 'sound/foley/climb.ogg', 100, TRUE)

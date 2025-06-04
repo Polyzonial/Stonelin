@@ -459,5 +459,5 @@
 				if(HAS_TRAIT(H, TRAIT_TUTELAGE)) //Base 50% of your xp is given to nearby apprentice
 					multiplier += 0.15
 			var/apprentice_amt = amt * 0.1 + multiplier
-			if(apprentice.mind.add_sleep_experience(skill, apprentice_amt, FALSE, FALSE))
+			if(apprentice.adjust_experience(skill, apprentice_amt, FALSE, FALSE))
 				current.add_stress(/datum/stressevent/apprentice_making_me_proud)

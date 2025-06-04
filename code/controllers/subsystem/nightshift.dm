@@ -68,8 +68,8 @@ SUBSYSTEM_DEF(nightshift)
 			SSdroning.play_area_sound(areal, src.client)
 		SSdroning.play_loop(areal, src.client)
 	if(todd == "dawn")
-		if(HAS_TRAIT(src, TRAIT_VAMP_DREAMS))
-			apply_status_effect(/datum/status_effect/debuff/vamp_dreams)
+		/*if(HAS_TRAIT(src, TRAIT_VAMP_DREAMS)) STONEKEEP EDIT
+			apply_status_effect(/datum/status_effect/debuff/vamp_dreams) */
 		if(HAS_TRAIT(src, TRAIT_NIGHT_OWL))
 			add_stress(/datum/stressevent/night_owl_dawn)
 	if(todd == "day")

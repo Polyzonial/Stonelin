@@ -705,9 +705,7 @@
 "mN" = (
 /obj/machinery/light/fueled/firebowl,
 /obj/machinery/light/fueled/cauldron,
-/turf/open/floor/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/greenstone,
 /area/rogue/indoors/towerofwise)
 "mS" = (
 /obj/effect/decal/rockedge{
@@ -1401,9 +1399,7 @@
 /turf/open/floor/carpet/hamlet,
 /area/rogue/indoors/vampire_manor)
 "Ad" = (
-/turf/open/floor/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/greenstone,
 /area/rogue/indoors/towerofwise)
 "Af" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2366,9 +2362,7 @@
 	pixel_y = 5
 	},
 /obj/item/natural/worms/grub_silk,
-/turf/open/floor/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/greenstone,
 /area/rogue/indoors/towerofwise)
 "Tn" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2650,9 +2644,7 @@
 	dir = 4
 	},
 /obj/item/pestle,
-/turf/open/floor/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/greenstone,
 /area/rogue/indoors/towerofwise)
 "XQ" = (
 /obj/effect/decal/rockedge{

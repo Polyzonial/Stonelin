@@ -287,11 +287,13 @@
 					if(user.mind && R.skillcraft)
 						if(isliving(user))
 							var/mob/living/L = user
-							var/amt2raise = L.STAINT * 2// its different over here
+							var/amt2raise = L.STAINT // STONEKEEP BALANCE EDIT
+							var/boon = L.get_learning_boon(R.skillcraft) // STONEKEEP BALANCE EDIT
 							if(R.craftdiff > 0) //difficult recipe
 								amt2raise += (R.craftdiff * 10)
 							if(amt2raise > 0)
-								user.mind.add_sleep_experience(R.skillcraft, amt2raise, FALSE)
+								user.adjust_experience(R.skillcraft, amt2raise * boon, FALSE) // STONEKEEP EDIT
+								// user.mind.add_sleep_experience(R.skillcraft, amt2raise, FALSE)
 					return
 				return 0
 			return "."
