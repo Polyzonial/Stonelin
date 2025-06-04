@@ -118,7 +118,7 @@
 		human_blood_type = newblood_type
 	unique_enzymes = generate_unique_enzymes()
 	unique_identity = generate_unique_identity()
-	//features = random_features() //Stonekeep Change.
+//	features = random_features()
 
 	if(species_override) //Part of the Ear/Tail fix. Stonekeep Change.
 		features = merged_features(species_override)
