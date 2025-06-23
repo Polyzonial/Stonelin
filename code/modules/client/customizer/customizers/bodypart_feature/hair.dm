@@ -250,12 +250,6 @@
 		/datum/sprite_accessory/hair/head/wastrel,
 		/datum/sprite_accessory/hair/head/wilderness,
 		/datum/sprite_accessory/hair/head/witcher,
-		/datum/sprite_accessory/hair/head/dreadlocksmessy,
-		/datum/sprite_accessory/hair/head/suave,
-		/datum/sprite_accessory/hair/head/ponytailwitcher,
-		/datum/sprite_accessory/hair/head/countryponytailalt,
-		/datum/sprite_accessory/hair/head/kusanagi_alt,
-		/datum/sprite_accessory/hair/head/shorthair6,
 		/datum/sprite_accessory/hair/head/helmet,
 	)
 
