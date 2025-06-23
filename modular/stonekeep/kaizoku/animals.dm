@@ -341,3 +341,8 @@
 	ssaddle = S
 	update_icon()
 
+/mob/living/simple_animal/hostile/retaliate/saiga/horse/mare/tame/saddled/Initialize()
+	. = ..()
+	var/obj/item/natural/saddle/S = new(src)
+	ssaddle = S
+	update_icon()
