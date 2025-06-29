@@ -214,7 +214,8 @@
 	icon_living = "horse"
 	icon_dead = "horse_dead"
 	icon_gib = "horse_gib"
-	faction = list("saiga")
+	faction = list("saiga") // mounted frens
+	ai_controller = /datum/ai_controller/fogbeast
 	gender = MALE
 	footstep_type = FOOTSTEP_MOB_SHOE
 	emote_see = list("grazes on grass.", "whinnies softly.", "stamps a hoof.", "gazes upon the horizon.", "'s tail whips mosquitos away.")
@@ -385,6 +386,7 @@
 	icon_dead = "horse_dead"
 	icon_gib = "horse_gib"
 	faction = list("saiga")
+	ai_controller = /datum/ai_controller/fogbeast
 	gender = FEMALE
 	animal_species = /mob/living/simple_animal/hostile/retaliate/fogbeast
 	footstep_type = FOOTSTEP_MOB_SHOE
@@ -586,7 +588,7 @@
 
 	can_breed = FALSE
 
-	ai_controller = /datum/ai_controller/saiga_kid
+	ai_controller = /datum/ai_controller/fogbeast_foal
 
 /mob/living/simple_animal/hostile/retaliate/fogmare/filly/colt
 	name = "fogbeast colt" // Name for a male young foal.
