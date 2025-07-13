@@ -9,7 +9,6 @@
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	robust_searching = 1
 	speak_chance = 5
-	turns_per_move = 1
 	move_to_delay = 1
 	base_constitution = 9
 	base_strength = 14
@@ -35,7 +34,7 @@
 	loot = list(/obj/effect/mob_spawn/human/orc/corpse/savageorc,
 			/obj/item/weapon/axe/boneaxe,
 			/obj/effect/decal/cleanable/blood)
-	faction = list(FACTION_ORCS)
+	faction = list(FACTION_GRAGGAR)
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	del_on_death = TRUE
 	ai_controller = /datum/ai_controller/orc

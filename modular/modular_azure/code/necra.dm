@@ -22,14 +22,12 @@
 /obj/effect/proc_holder/spell/invoked/avert/cast(list/targets, mob/living/carbon/human/user)
 	. = ..()
 	var/atom/target = targets[1]
-	if (!isliving(target))
-		revert_cast()
+	if(!isliving(target))
 		return FALSE
 
 	var/mob/living/living_target = target
-	if (!user.Adjacent(target))
+	if(!user.Adjacent(target))
 		to_chat(user, span_warning("I must be beside [living_target] to avert Her gaze from [living_target.p_them()]!"))
-		revert_cast()
 		return FALSE
 
 	// add the no-death trait to them....
@@ -61,6 +59,7 @@
 	REMOVE_TRAIT(living_target, TRAIT_NODEATH, "avert_spell")
 
 	user.visible_message(span_danger("[user]'s concentration breaks, the motes receding from [living_target] and into [user.p_their()] hand once more."), span_danger("My concentration breaks, and the Intercession falls silent."))
+	return ..()
 
 /obj/effect/proc_holder/spell/targeted/abrogation
 	name = "Abrogation"
@@ -148,7 +147,7 @@
 	var/filter = owner.get_filter(CHURN_FILTER)
 	to_chat(owner, span_warning("Wisps leap from the cloying mists to surround me, their chill disrupting my body! FLEE!"))
 	if (!filter)
-		owner.add_filter(CHURN_FILTER, 2, list("type" = "outline", "color" = outline_colour, "alpha" = 200, "size" = 1))
+		owner.add_filter(CHURN_FILTER, 2, outline_filter(1, outline_colour))
 	return TRUE
 
 /datum/status_effect/churned/refresh()

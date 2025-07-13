@@ -409,7 +409,6 @@
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	robust_searching = 1
 	speak_chance = 5
-	turns_per_move = 1
 	move_to_delay = 1
 	base_constitution = 14
 	base_strength = 6
@@ -592,4 +591,4 @@
 	dodgetime = 17
 
 	///this mob was updated to new ai
-	ai_controller = /datum/ai_controller/spider
+	ai_controller = /datum/ai_controller/haunt

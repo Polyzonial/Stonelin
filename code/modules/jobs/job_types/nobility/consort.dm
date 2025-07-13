@@ -7,7 +7,7 @@
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_CONSORT
-	faction = FACTION_STATION
+	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 1
 	min_pq = 6
@@ -30,9 +30,9 @@
 /datum/job/consort/after_spawn(mob/living/spawned, client/player_client)
 	..()
 	var/mob/living/carbon/human/H = spawned
-	SSfamilytree.AddRoyal(H, (H.gender == FEMALE) ? FAMILY_MOTHER : FAMILY_FATHER)
+	addtimer(CALLBACK(SSfamilytree, TYPE_PROC_REF(/datum/controller/subsystem/familytree, AddRoyal), H, (H.gender == FEMALE) ? FAMILY_MOTHER : FAMILY_FATHER), 3 SECONDS)
 	if(GLOB.keep_doors.len > 0)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(know_keep_door_password), H), 50)
+		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(know_keep_door_password), H), 5 SECONDS)
 	ADD_TRAIT(H, TRAIT_KNOWKEEPPLANS, TRAIT_GENERIC)
 
 /datum/outfit/job/consort
@@ -94,6 +94,9 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	switch(H.patron?.type)
+		if(/datum/patron/inhumen/baotha)
+			H.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 
 /datum/advclass/consort/courtesan
 	name = "Courtesan Consort"
@@ -135,10 +138,13 @@
 	H.change_stat(STATKEY_LCK, 3)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	switch(H.patron?.type)
+		if(/datum/patron/inhumen/baotha)
+			H.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 
 /datum/advclass/consort/lowborn
 	name = "Lowborn Consort"
-	tutorial = "You never could have dreamed your life would be like this. Though your origins are humble, something special about you - whether it was your good looks, your kind heart, or your bravery - has brought you into Vanderlin Keep."
+	tutorial = "You never could have dreamed your life would be like this. Though your origins are humble, something special about you - whether it was your good looks, your kind heart, or your bravery - has brought you into Stonekeep."
 	outfit = /datum/outfit/job/consort/lowborn
 
 	category_tags = list(CTAG_CONSORT)
@@ -175,6 +181,9 @@
 	ADD_TRAIT(H, TRAIT_SEEDKNOW, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	switch(H.patron?.type)
+		if(/datum/patron/inhumen/baotha)
+			H.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 
 /datum/advclass/consort/courtesan/night_spy
 	name = "Night-Mother's Spy Consort"
@@ -187,7 +196,7 @@
 	title = "Ex-Consort"
 	flag = CONSORT
 	department_flag = NOBLEMEN
-	faction = FACTION_STATION
+	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 0
 	display_order = JDO_CONSORT

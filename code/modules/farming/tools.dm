@@ -37,10 +37,31 @@
 	possible_item_intents = list(MACE_STRIKE)
 	gripped_intents = list(/datum/intent/flail/strike/long, /datum/intent/flail/strike/smash/long, /datum/intent/flailthresh,)
 	name = "military flail"
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	pixel_y = -16
+	pixel_x = -16
 	desc = "Crushes skulls, or grain."
-	icon_state = "military"
+	icon_state = "milflail"
+	icon = 'modular/stonekeep/icons/weapons_64.dmi'
+	bigboy = TRUE
+	gripsprite = TRUE
+	experimental_inhand = TRUE
+	w_class = WEIGHT_CLASS_BULKY
 	minstr = 7
 	smeltresult = /obj/item/ingot/iron
+
+/obj/item/weapon/thresher/military/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = -7,"sy" = 2,"nx" = 7,"ny" = 3,"wx" = -2,"wy" = 1,"ex" = 1,"ey" = 1,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -38,"sturn" = 37,"wturn" = 30,"eturn" = -30,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
+			if("wielded")
+				return list("shrink" = 0.6,"sx" = 5,"sy" = -3,"nx" = -5,"ny" = -2,"wx" = -5,"wy" = -1,"ex" = 3,"ey" = -2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 7,"sturn" = -7,"wturn" = 16,"eturn" = -22,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0)
+			if("onbelt")
+				return list("shrink" = 0.3,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
+
 
 /datum/intent/flailthresh
 	name = "thresh"
@@ -441,105 +462,19 @@
 				I.forceMove(target)
 				forked -= I
 			to_chat(user, span_warning("I dump the stalks."))
-		update_icon()
+		update_appearance(UPDATE_ICON_STATE)
 		return
-	..()
+	return ..()
 
 /obj/item/weapon/pitchfork/ungrip(mob/living/carbon/user, show_message = TRUE)
+	. = ..()
 	if(forked.len)
 		var/turf/T = get_turf(user)
 		for(var/obj/item/I in forked)
 			I.forceMove(T)
 			forked -= I
-		update_icon()
-	..()
+		update_appearance(UPDATE_ICON_STATE)
 
-/obj/item/weapon/pitchfork/update_icon()
-	if(forked.len)
-		icon_state = "pitchforkstuff"
-	else
-		icon_state = initial(icon_state)
-	..()
-
-
-/*-------------\
-|  Egg basket  |
-\-------------*/
-
-/obj/item/storage/eggbasket
-	name = "egg basket"
-	icon = 'icons/roguetown/items/misc.dmi'
-	icon_state = "eggbasket"
-	w_class = WEIGHT_CLASS_NORMAL
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	resistance_flags = FLAMMABLE
-	max_integrity = 70
-	dropshrink = 0.8
-
-/obj/item/storage/eggbasket/Initialize(mapload)
+/obj/item/weapon/pitchfork/update_icon_state()
 	. = ..()
-	AddComponent(/datum/component/storage/concrete/grid/egg_basket)
-	if(!mapload)
-		return
-	for(var/obj/item/I in loc)
-		if(istype(I, /obj/item/reagent_containers/food/snacks/egg))
-			I.forceMove(src)
-	update_icon()
-
-/obj/item/storage/eggbasket/attack_right(mob/user)
-	. = ..()
-	if(.)
-		return
-	user.changeNext_move(CLICK_CD_MELEE)
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	var/list/things = STR.contents()
-	if(things.len)
-		var/obj/item/reagent_containers/food/snacks/egg/I = pick(things)
-		STR.remove_from_storage(I, get_turf(user))
-		user.put_in_hands(I)
-
-/obj/item/storage/eggbasket/update_icon()
-//	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-//	var/list/things = STR.contents()
-	switch(contents.len)
-		if(0)
-			icon_state = "[initial(icon_state)]"
-			w_class = WEIGHT_CLASS_NORMAL
-		if(1 to 3)
-			icon_state = "[initial(icon_state)]1"
-			w_class = WEIGHT_CLASS_BULKY
-		if(4 to 6)
-			icon_state = "[initial(icon_state)]2"
-		else
-			icon_state = "[initial(icon_state)]3"
-
-/obj/item/storage/eggbasket/getonmobprop(tag)
-	. = ..()
-	if(tag)
-		switch(tag)
-			if("gen")
-				return list("shrink" = 0.4,
-"sx" = -4,
-"sy" = -3,
-"nx" = 6,
-"ny" = -3,
-"wx" = -2,
-"wy" = -3,
-"ex" = -1,
-"ey" = -3,
-"northabove" = 0,
-"southabove" = 1,
-"eastabove" = 1,
-"westabove" = 0,
-"nturn" = 0,
-"sturn" = 0,
-"wturn" = 0,
-"eturn" = 0,
-"nflip" = 8,
-"sflip" = 0,
-"wflip" = 0,
-"eflip" = 8)
-			if("onbelt")
-				return list("shrink" = 0.3,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
-
-
+	icon_state = "[initial(icon_state)][length(forked) ? "stuff" : ""]"

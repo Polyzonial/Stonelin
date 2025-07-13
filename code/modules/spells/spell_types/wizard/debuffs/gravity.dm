@@ -15,6 +15,7 @@
 	attunements = list(
 		/datum/attunement/dark = 0.6,
 	)
+	overlay_state = "gravity"
 	var/delay = 3
 	var/damage = 0 // damage based off your str
 	var/area_of_effect = 0
@@ -52,7 +53,7 @@
 	desc = "Get out of the way!"
 	randomdir = FALSE
 	duration = 3 SECONDS
-	layer = MASSIVE_OBJ_LAYER
+	plane = MASSIVE_OBJ_PLANE
 	light_power = 1
 	light_outer_range = 2
 	light_color = COLOR_PALE_PURPLE_GRAY

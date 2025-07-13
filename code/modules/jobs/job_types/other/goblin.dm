@@ -4,7 +4,7 @@
 	flag = GRAVETENDER
 	//department_flag = PEASANTS
 	job_flags = (JOB_EQUIP_RANK)
-	faction = FACTION_STATION
+	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 0
 	display_order = JDO_HAND
@@ -45,7 +45,7 @@
 	if(H.charflaw)
 		QDEL_NULL(H.charflaw)
 	H.update_body()
-	H.faction = list(FACTION_ORCS)
+	H.faction = list(FACTION_GRAGGAR)
 	H.name = "goblin"
 	H.real_name = "goblin"
 	ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)

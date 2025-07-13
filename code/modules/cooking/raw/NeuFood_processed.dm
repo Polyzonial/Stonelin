@@ -12,6 +12,19 @@
 	icon_state = "fat"
 	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_POOR)
 	eat_effect = /datum/status_effect/debuff/uncookedfood
+	possible_item_intents = list(/datum/intent/splash, /datum/intent/food)
+
+/obj/item/reagent_containers/food/snacks/attack(mob/living/M, mob/user, proximity)
+	if(user.used_intent.type == /datum/intent/food)
+		return ..()
+
+	if(!isliving(M))
+		return
+
+	user.visible_message("[user] starts to oil up [M]", "You start to oil up [M]")
+	if(!do_after(user, 5 SECONDS, M))
+		return
+	M.apply_status_effect(/datum/status_effect/buff/oiled)
 
 /obj/item/reagent_containers/food/snacks/fat/attackby(obj/item/I, mob/living/user, params)
 	var/found_table = locate(/obj/structure/table) in (loc)
@@ -87,11 +100,12 @@
 	slice_sound = TRUE
 	faretype = FARE_POOR
 
-/obj/item/reagent_containers/food/snacks/meat/salami/update_icon()
+/obj/item/reagent_containers/food/snacks/meat/salami/update_icon_state()
 	if(slices_num)
 		icon_state = "salumoi[slices_num]"
 	else
 		icon_state = "salumoi_slice"
+	return ..()
 
 /obj/item/reagent_containers/food/snacks/meat/salami/on_consume(mob/living/eater)
 	..()
@@ -162,11 +176,12 @@
 	eat_effect = null
 	faretype = FARE_POOR
 
-/obj/item/reagent_containers/food/snacks/fat/salo/update_icon()
+/obj/item/reagent_containers/food/snacks/fat/salo/update_icon_state()
 	if(slices_num)
 		icon_state = "salo[slices_num]"
 	else
 		icon_state = "saloslice"
+	return ..()
 
 /obj/item/reagent_containers/food/snacks/fat/salo/on_consume(mob/living/eater)
 	..()
@@ -341,11 +356,12 @@
 	slice_sound = TRUE
 	faretype = FARE_IMPOVERISHED
 
-/obj/item/reagent_containers/food/snacks/butter/update_icon()
+/obj/item/reagent_containers/food/snacks/butter/update_icon_state()
 	if(slices_num)
 		icon_state = "butter[slices_num]"
 	else
 		icon_state = "butter_slice"
+	return ..()
 
 /obj/item/reagent_containers/food/snacks/butter/on_consume(mob/living/eater)
 	..()
@@ -520,7 +536,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = CHEESE_NUTRITION)
 	w_class = WEIGHT_CLASS_TINY
 	tastes = list("cheese" = 1)
-	foodtype = GRAIN
+	foodtype = DAIRY //Stonekeep edit. Let Changelings EAT CHEESE.
 	eat_effect = null
 	rotprocess = SHELFLIFE_DECENT
 	become_rot_type = null

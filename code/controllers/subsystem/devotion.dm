@@ -23,7 +23,7 @@
 	/// How much progression is gained per process call
 	var/passive_progression_gain = 0
 	/// How much devotion is gained per prayer cycle
-	var/prayer_effectiveness = 2
+	var/prayer_effectiveness = 5 //Stonekeep edit under request.
 
 /datum/devotion/cleric_holder/New(mob/living/carbon/human/holder, god)
 	. = ..()
@@ -127,6 +127,8 @@
 
 	var/datum/patron/A = H.patron
 	var/list/spelllist = list(A.t0, A.t1)
+	if(istype(A, /datum/patron/divine/necra))
+		spelllist += /obj/effect/proc_holder/spell/invoked/avert
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -140,6 +142,8 @@
 
 	var/datum/patron/A = H.patron
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/abrogation, A.t0, A.t1)
+	if(istype(A, /datum/patron/divine/necra))
+		spelllist += /obj/effect/proc_holder/spell/invoked/avert
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue

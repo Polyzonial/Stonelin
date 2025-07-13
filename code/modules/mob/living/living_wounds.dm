@@ -162,27 +162,31 @@
 /mob/living/proc/simple_try_crit(bclass, dam, mob/living/user, zone_precise, silent = FALSE, crit_message = FALSE)
 	if(!bclass || !dam || (status_flags & GODMODE) || !HAS_TRAIT(src, TRAIT_SIMPLE_WOUNDS))
 		return FALSE
-	var/list/attempted_wounds = list()
 	var/used
 	if(user)
 		if(user.stat_roll(STATKEY_LCK,2,10))
 			dam += 10
-	var/crit_classes = list()
-	if(bclass in GLOB.fracture_bclasses)
-		crit_classes += "fracture"
-	if(bclass in GLOB.artery_bclasses)
-		crit_classes += "artery"
 
+	var/list/crit_classes
+	if(bclass in GLOB.fracture_bclasses)
+		LAZYADD(crit_classes, "fracture")
+	if(bclass in GLOB.artery_bclasses)
+		LAZYADD(crit_classes, "artery")
+
+	if(!LAZYLEN(crit_classes))
+		return FALSE
+
+	var/list/attempted_wounds
 	switch(pick(crit_classes))
 		if("fracture")
 			if(user && istype(user.rmb_intent, /datum/rmb_intent/strong))
 				dam += 10
 			used = round((health / maxHealth) * 20 + (dam / 3), 1)
-			if(prob(used))
+			if(HAS_TRAIT(user, TRAIT_ADMINTEST_CRIT) || prob(used))
 				var/fracture_type = /datum/wound/fracture/chest
 				if(check_zone(zone_precise) == BODY_ZONE_HEAD)
 					fracture_type = /datum/wound/fracture/head
-				attempted_wounds += fracture_type
+				LAZYADD(attempted_wounds, fracture_type)
 		if("artery")
 			if(user)
 				if((bclass in GLOB.artery_strong_bclasses) && istype(user.rmb_intent, /datum/rmb_intent/strong))
@@ -190,8 +194,11 @@
 				else if(istype(user.rmb_intent, /datum/rmb_intent/aimed))
 					dam += 30
 			used = round(max(dam / 3, 1), 1)
-			if(prob(used))
-				attempted_wounds += /datum/wound/artery/chest
+			if(HAS_TRAIT(user, TRAIT_ADMINTEST_CRIT) || prob(used))
+				LAZYADD(attempted_wounds, /datum/wound/artery/chest)
+
+	if(!LAZYLEN(attempted_wounds))
+		return FALSE
 
 	for(var/wound_type in shuffle(attempted_wounds))
 		var/datum/wound/applied = simple_add_wound(wound_type, silent, crit_message)

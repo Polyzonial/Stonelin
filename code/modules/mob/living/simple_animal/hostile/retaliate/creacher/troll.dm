@@ -7,7 +7,7 @@
 	icon_dead = "troll_dead"
 	pixel_x = -16
 
-	faction = list(FACTION_ORCS)
+	faction = list(FACTION_GRAGGAR)
 	footstep_type = FOOTSTEP_MOB_HEAVY
 	emote_hear = null
 	emote_see = null
@@ -16,7 +16,6 @@
 	verb_exclaim = "roars"
 	verb_yell = "roars"
 
-	turns_per_move = 2
 	see_in_dark = 10
 	move_to_delay = 7
 	vision_range = 6

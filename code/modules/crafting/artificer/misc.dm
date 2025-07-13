@@ -1,6 +1,8 @@
 /datum/artificer_recipe
 	appro_skill = /datum/skill/craft/engineering
 
+// --------- GENERAL -----------
+
 /datum/artificer_recipe/general
 	i_type = "General"
 	category = "General"
@@ -72,7 +74,7 @@
 	created_amount = 2
 	craftdiff = 0
 
-/datum/artificer_recipe/bronze/headhook
+/datum/artificer_recipe/general/headhook
 	name = "Bronze Headhook (+Fibers x2)"
 	required_item = /obj/item/ingot/bronze
 	created_item = /obj/item/storage/hip/headhook/bronze
@@ -120,14 +122,14 @@
 	i_type = "Contraptions"
 	category = "Contraptions"
 
-/datum/artificer_recipe/contraptions/metalizer
+/*/datum/artificer_recipe/contraptions/metalizer
 	name = "Wood Metalizer (+1 Wooden Cog)"
 	required_item = /obj/item/ingot/bronze
 	additional_items = list(/obj/item/gear/wood = 1)
 	created_item = /obj/item/contraption/wood_metalizer
 	hammers_per_item = 12
 	craftdiff = 4
-
+*/
 /datum/artificer_recipe/contraptions/smelter
 	name = "Portable Smelter (+1 Coal)"
 	required_item = /obj/item/ingot/bronze
@@ -389,15 +391,15 @@
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/malum/silver
-	name = "Malum silver Psycross"
+/datum/artificer_recipe/psycross/malum_silver
+	name = "Malum Silver Psycross"
 	required_item = /obj/item/ingot/silver
 	created_item = /obj/item/clothing/neck/psycross/silver/malum
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/malum_steel/steel
-	name = "Malum steel Psycross"
+/datum/artificer_recipe/psycross/malum_steel
+	name = "Malum Steel Psycross"
 	required_item = /obj/item/ingot/silver
 	created_item = /obj/item/clothing/neck/psycross/silver/malum_steel
 	additional_items = list(/obj/item/ingot/steel = 1)

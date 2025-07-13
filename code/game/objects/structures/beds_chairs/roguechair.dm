@@ -10,6 +10,7 @@
 //	pixel_y = 10
 	layer = OBJ_LAYER
 	metalizer_result = /obj/item/statue/iron/deformed
+	anchored = TRUE
 
 /obj/structure/chair/bench/church
 	icon_state = "church_benchleft"
@@ -25,14 +26,6 @@
 	var/static/list/loc_connections = list(COMSIG_ATOM_EXIT = PROC_REF(on_exit))
 	AddElement(/datum/element/connect_loc, loc_connections)
 	handle_layer()
-
-/obj/structure/chair/bench/handle_layer()
-	if(dir == NORTH)
-		layer = ABOVE_MOB_LAYER
-		plane = GAME_PLANE_UPPER
-	else
-		layer = OBJ_LAYER
-		plane = GAME_PLANE
 
 /obj/structure/chair/bench/post_buckle_mob(mob/living/M)
 	..()
@@ -87,25 +80,6 @@
 /obj/structure/chair/bench/throne
 	name = "small throne"
 	icon_state = "thronechair"
-
-/obj/structure/chair/bench/couch/Initialize()
-	. = ..()
-	if(GLOB.lordprimary)
-		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
-	else
-		GLOB.lordcolor += src
-
-/obj/structure/chair/bench/couch/Destroy()
-	GLOB.lordcolor -= src
-	return ..()
-
-/obj/structure/chair/bench/couch/lordcolor(primary,secondary)
-	if(!primary || !secondary)
-		return
-	var/mutable_appearance/M = mutable_appearance(icon, "[icon_state]_primary", -(layer+0.1))
-	M.color = secondary //looks better
-	add_overlay(M)
-	GLOB.lordcolor -= src
 
 // dirtier sofa
 /obj/structure/chair/bench/couch/redleft
@@ -230,11 +204,6 @@
 /obj/item/chair/fancy
 	icon_state = "chair1"
 	origin_type = /obj/structure/chair/wood/alt/fancy
-
-/obj/structure/chair/wood/alt/attack_right(mob/user)
-	var/datum/component/simple_rotation/rotcomp = GetComponent(/datum/component/simple_rotation)
-	if(rotcomp)
-		rotcomp.HandRot(rotcomp,user,ROTATION_CLOCKWISE)
 
 /obj/structure/chair/wood/alt
 //	pixel_y = 5

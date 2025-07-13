@@ -2,7 +2,7 @@
 	title = "Mayor"
 	flag = MAYOR
 	department_flag = GARRISON
-	faction = FACTION_STATION
+	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 0
 
@@ -16,7 +16,7 @@
 		"Aasimar"
 	)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
-	tutorial = "The crown may lead officially, but the townsfolk of Vanderlin look to you to manage the settlement and solve lesser issues. Remember the old ways of the law... not everything must end in bloodshed, but do what is necessary to maintain the peace."
+	tutorial = "The crown may lead officially, but the townsfolk of Stonekeep look to you to manage the settlement and solve lesser issues. Remember the old ways of the law... not everything must end in bloodshed, but do what is necessary to maintain the peace."
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/roguetown/mayor
@@ -83,7 +83,7 @@
 	f_title = "Town Militiawoman"
 	flag = GUARDSMAN
 	department_flag = GARRISON
-	faction = FACTION_STATION
+	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 0
 	display_order = JDO_CITYWATCHMEN

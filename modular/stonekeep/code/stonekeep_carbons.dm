@@ -190,7 +190,7 @@
 	var/loadout = rand(1,5)
 	switch(loadout)
 		if(1) //Dual Axe Warrior
-			r_hand = /obj/item/weapon/axe/stone
+			r_hand = /obj/item/weapon/axe/boneaxe
 		if(2) //Long Club Caveman
 			r_hand = /obj/item/weapon/polearm/woodstaff
 		if(3) //Club Caveman
@@ -199,7 +199,7 @@
 			r_hand = /obj/item/weapon/knife/stone
 			l_hand = /obj/item/weapon/knife/stone
 		if(5) //Spear hunter
-			r_hand = /obj/item/weapon/polearm/spear/stone
+			r_hand = /obj/item/weapon/polearm/spear/bonespear
 
 // -------------------		SAVAGE ORC LOOTER		--------------------------
 
@@ -594,7 +594,6 @@
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	robust_searching = 1
 	speak_chance = 5
-	turns_per_move = 1
 	move_to_delay = 1
 	base_constitution = 14
 	base_strength = 12
@@ -619,7 +618,7 @@
 	candodge = TRUE
 	d_intent = INTENT_DODGE
 	speak_emote = list("moans")
-	faction = list("Zizo")
+	faction = list(FACTION_UNDEAD)//this way the zombies don't fight each other depending if they are simple or carbons...
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	del_on_death = FALSE
 
@@ -747,7 +746,7 @@
 /obj/item/clothing/head/jester/artefact/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(user.patron == /datum/patron/divine/xylix)
-		if(slot == SLOT_HEAD && istype(user))
+		if(slot == ITEM_SLOT_HEAD && istype(user))
 			user.apply_status_effect(/datum/status_effect/buff/xylix_cap)
 			body_parts_covered = FULL_BODY
 		else
