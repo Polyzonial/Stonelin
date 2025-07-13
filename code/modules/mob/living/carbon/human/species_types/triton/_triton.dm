@@ -134,7 +134,7 @@
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 
 /datum/species/triton/check_roundstart_eligible()
-	return FALSE
+	return TRUE
 
 /datum/species/triton/qualifies_for_rank(rank, list/features)
 	return TRUE

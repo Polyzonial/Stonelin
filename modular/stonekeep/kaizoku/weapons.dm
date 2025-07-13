@@ -1586,7 +1586,7 @@
 	var/projectile_type = /obj/projectile/bullet/reusable/arrow
 
 	if(istype(loaded, /obj/item/firewagonrockets/pyro))
-		projectile_type = /obj/projectile/bullet/reusable/arrow/pyro
+		projectile_type = /obj/projectile/bullet/arrow/pyro
 
 	for (var/i = 1, i <= pellets, i++)
 		var/obj/projectile/bullet/reusable/arrow/fired_projectile = new projectile_type(get_turf(src))

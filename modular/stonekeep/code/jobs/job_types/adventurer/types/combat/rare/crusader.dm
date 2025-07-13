@@ -107,7 +107,7 @@
 	sleeved = 'icons/roguetown/clothing/special/onmob/crusader.dmi'
 
 
-/obj/item/clothing/cloak/cape/crusader/Initialize(mapload, ...)
+/obj/item/clothing/cloak/cape/crusader/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/storage/concrete/grid/cloak/lord)
 
