@@ -816,7 +816,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.wav'
+	landsound = 'sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 2800
 

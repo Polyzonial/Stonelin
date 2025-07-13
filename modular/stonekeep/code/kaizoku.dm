@@ -879,8 +879,8 @@ get_accent_list()
 	desc = "Known as the vitalis arbor, this tree lives in symbiosis with mushrooms. The trunk is hollow and rich with fluid."
 	icon = 'modular/stonekeep/kaizoku/icons/mapset/frontierjustice32.dmi'
 	icon_state = "hollowtree"
-	tree_type = "hollow"
-	base_state = null
+//	tree_type = "hollow"	These two vars have been depreciated by upstream
+//	base_state = null
 	max_integrity = 250
 	armor = list("blunt" = 0, "slash" = 0, "stab" = 0, "piercing" = 0, "fire" = -100, "acid" = 50)
 	blade_dulling = DULLING_CUT
