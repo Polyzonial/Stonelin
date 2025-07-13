@@ -96,7 +96,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.wav'
+	landsound = 'sound/foley/jumpland/stoneland.ogg'
 
 
 /turf/open/floor/sandstone/shaded
@@ -121,7 +121,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.wav'
+	landsound = 'sound/foley/jumpland/stoneland.ogg'
 	neighborlay = "cobstonemoss"
 	max_integrity = 1200
 
@@ -366,7 +366,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.wav'
+	landsound = 'sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 
 /obj/effect/decal/haycorner
@@ -384,7 +384,7 @@
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.wav'
+	landsound = 'sound/foley/jumpland/dirtland.ogg'
 	neighborlay = "sandedges"
 
 /turf/open/floor/sand/Initialize()
@@ -394,7 +394,7 @@
 
 /turf/open/floor/carpet/hamlet
 	icon = 'modular/stonekeep/icons/carpet_hamlet.dmi'
-
+	smoothing_flags = SMOOTH_BITMASK
 
 // more roofing
 /turf/open/floor/rooftop/dark

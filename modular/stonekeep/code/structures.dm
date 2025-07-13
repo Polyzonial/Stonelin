@@ -757,7 +757,7 @@
 	desc = "A huge inedible mushroom, prized by dwarves for their shroomwood."
 	icon = 'modular/stonekeep/icons/pigflora64.dmi'
 	icon_state = "shroomtree_1"
-	var/base_icon_state = "shroomtree"
+	base_icon_state = "shroomtree"
 	opacity = 0
 	density = TRUE
 	max_integrity = 120
